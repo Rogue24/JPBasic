@@ -18,7 +18,7 @@ pod 'JPBasic'
 
 ## Author
 
-zhoujianping24@hotmail.com, zhoujianping24@hotmail.com
+Email: zhoujianping24@hotmail.com, Blog: https://www.jianshu.com/u/2edfbadd451c
 
 ## License
 
