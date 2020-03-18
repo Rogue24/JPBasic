@@ -1,6 +1,5 @@
 # JPBasic
 
-[![CI Status](https://img.shields.io/travis/zhoujianping24@hotmail.com/JPBasic.svg?style=flat)](https://travis-ci.org/zhoujianping24@hotmail.com/JPBasic)
 [![Version](https://img.shields.io/cocoapods/v/JPBasic.svg?style=flat)](https://cocoapods.org/pods/JPBasic)
 [![License](https://img.shields.io/cocoapods/l/JPBasic.svg?style=flat)](https://cocoapods.org/pods/JPBasic)
 [![Platform](https://img.shields.io/cocoapods/p/JPBasic.svg?style=flat)](https://cocoapods.org/pods/JPBasic)
