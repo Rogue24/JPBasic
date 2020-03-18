@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/JPBasic.svg?style=flat)](https://cocoapods.org/pods/JPBasic)
 [![Platform](https://img.shields.io/cocoapods/p/JPBasic.svg?style=flat)](https://cocoapods.org/pods/JPBasic)
 
-##### 开发常用的分类、工具类、加载图片类、宏、常量。
+##### 开发常用的分类、工具类、宏、常量。
 
 ## Installation
 

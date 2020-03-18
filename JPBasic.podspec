@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-    开发常用的分类、工具类、加载图片类、宏、常量。
+    开发常用的分类、工具类、宏、常量。
                        DESC
 
   s.homepage         = 'https://github.com/Rogue24/JPBasic'
