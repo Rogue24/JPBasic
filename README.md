@@ -5,11 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/JPBasic.svg?style=flat)](https://cocoapods.org/pods/JPBasic)
 [![Platform](https://img.shields.io/cocoapods/p/JPBasic.svg?style=flat)](https://cocoapods.org/pods/JPBasic)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+##### 开发常用的分类、工具类、加载图片类、宏、常量。
 
 ## Installation
 
