@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIWindow+JPExtension.h"
 
 @interface UIView (JPExtension)
 
@@ -27,10 +28,7 @@
 + (UIWindow *)jp_frontWindow;
 - (BOOL)jp_isShowingOnKeyWindow;
 
-/** 获取顶层控制器 */
-+ (UIViewController *)jp_getTopViewController;
 - (UIViewController *)jp_topViewController;
-/** 获取顶层导航控制器控制器 */
 - (UINavigationController *)jp_topNavigationController;
 
 @property (nonatomic, assign) CGFloat jp_x;

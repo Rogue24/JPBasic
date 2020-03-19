@@ -1,22 +1,22 @@
 PODS:
-  - JPBasic (0.1.0):
-    - JPBasic/JPCategory (= 0.1.0)
-    - JPBasic/JPConst (= 0.1.0)
-    - JPBasic/JPCustomUnit (= 0.1.0)
-    - JPBasic/JPProgressHUD (= 0.1.0)
-    - JPBasic/JPTool (= 0.1.0)
-  - JPBasic/JPCategory (0.1.0):
+  - JPBasic (0.1.1):
+    - JPBasic/JPCategory (= 0.1.1)
+    - JPBasic/JPConst (= 0.1.1)
+    - JPBasic/JPCustomUnit (= 0.1.1)
+    - JPBasic/JPProgressHUD (= 0.1.1)
+    - JPBasic/JPTool (= 0.1.1)
+  - JPBasic/JPCategory (0.1.1):
     - JPBasic/JPConst
     - Masonry
     - pop
-  - JPBasic/JPConst (0.1.0)
-  - JPBasic/JPCustomUnit (0.1.0):
+  - JPBasic/JPConst (0.1.1)
+  - JPBasic/JPCustomUnit (0.1.1):
     - JPBasic/JPCategory
     - JPBasic/JPConst
     - JPBasic/JPTool
-  - JPBasic/JPProgressHUD (0.1.0):
+  - JPBasic/JPProgressHUD (0.1.1):
     - SVProgressHUD
-  - JPBasic/JPTool (0.1.0):
+  - JPBasic/JPTool (0.1.1):
     - JPBasic/JPCategory
     - JPBasic/JPConst
     - YYText
@@ -29,7 +29,7 @@ DEPENDENCIES:
   - JPBasic (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Masonry
     - pop
     - SVProgressHUD
@@ -40,7 +40,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JPBasic: 135ad27cbf86fbee998459ce5c6afc08ece79469
+  JPBasic: b879e89e3d7076956a007c6cae13df54098015ee
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
@@ -48,4 +48,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 71de24ee7bfa878b7a2679d205fcf774c3692731
 
-COCOAPODS: 1.7.1
+COCOAPODS: 1.9.1

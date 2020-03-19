@@ -7,9 +7,18 @@
 //
 
 #import "UIViewController+JPExtension.h"
+#import "UIView+JPExtension.h"
 #import <objc/runtime.h>
 
 @implementation UIViewController (JPExtension)
+
+- (UIViewController *)jp_topViewController {
+    return [self.view jp_topViewController];
+}
+
+- (UINavigationController *)jp_topNavigationController {
+    return self.jp_topViewController.navigationController;
+}
 
 - (void)jp_contentInsetAdjustmentNever:(UIScrollView *)scrollView {
     self.automaticallyAdjustsScrollViewInsets = NO;

@@ -10,6 +10,8 @@
 #import "UIScrollView+JPExtension.h"
 
 @interface UIViewController (JPExtension)
+- (UIViewController *)jp_topViewController;
+- (UINavigationController *)jp_topNavigationController;
 - (void)jp_contentInsetAdjustmentNever:(UIScrollView *)scrollView;
 - (BOOL)jp_isRootViewController;
 - (void)jp_popVC;
