@@ -9,7 +9,7 @@
 #import "NSObject+JPExtension.h"
 #import <objc/runtime.h>
 #import <malloc/malloc.h>
-#import "JPMacro.h"
+#import "JPConstant.h"
 
 @implementation NSObject (JPExtension)
 
@@ -119,6 +119,18 @@
 
 - (NSInteger)jp_mallocSize {
     return malloc_size((__bridge const void *)self);
+}
+
++ (void)jp_swizzleInstanceMethodsWithOriginalSelector:(SEL)originalSelector swizzledSelector:(SEL)swizzledSelector {
+    Method originalMethod = class_getInstanceMethod(self, originalSelector);
+    Method swizzledMethod = class_getInstanceMethod(self, swizzledSelector);
+    method_exchangeImplementations(originalMethod, swizzledMethod);
+}
++ (void)jp_swizzleClassMethodsWithOriginalSelector:(SEL)originalSelector swizzledSelector:(SEL)swizzledSelector {
+    Class metaCls = object_getClass(self);
+    Method originalMethod = class_getClassMethod(metaCls, originalSelector);
+    Method swizzledMethod = class_getClassMethod(metaCls, swizzledSelector);
+    method_exchangeImplementations(originalMethod, swizzledMethod);
 }
 
 @end

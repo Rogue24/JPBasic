@@ -180,12 +180,17 @@ CG_INLINE UIFont * JPScaleOswaldMediumFont(CGFloat fontSize) {
 /**
  * 计算富文本区域（一行）
  */
-+ (CGRect)oneLineAttTextFrameWithText:(NSAttributedString *)text;
++ (CGRect)oneLineAttTextFrameWithText:(NSAttributedString *)attText;
 
 /**
  * 计算富文本区域
  */
-+ (CGRect)attTextFrameWithText:(NSAttributedString *)text maxSize:(CGSize)maxSize;
++ (CGRect)attTextFrameWithText:(NSAttributedString *)attText maxSize:(CGSize)maxSize;
+
+/**
+ * 计算富文本区域（返回是否超过一行）
+ */
++ (CGRect)attTextFrameWithText:(NSAttributedString *)attText maxSize:(CGSize)maxSize isOneLine:(BOOL *)isOneLine;
 
 /**
  * 计算半径

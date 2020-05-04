@@ -46,6 +46,10 @@
         }
     }
     
+    if (rect.size.height > 0 && rect.size.height < font.pointSize) {
+        rect.size.height = font.pointSize;
+    }
+    
     if (isOneLine) *isOneLine = !isMoreThanOneLine;
 
     return rect;
@@ -83,17 +87,59 @@
         }
     }
     
+    if (rect.size.height > 0 && rect.size.height < font.pointSize) {
+        rect.size.height = font.pointSize;
+    }
+    
     if (isOneLine) *isOneLine = !isMoreThanOneLine;
     
     return rect;
 }
 
-+ (CGRect)oneLineAttTextFrameWithText:(NSAttributedString *)text {
-    return [self attTextFrameWithText:text maxSize:CGSizeMake(999, 999)];
++ (CGRect)oneLineAttTextFrameWithText:(NSAttributedString *)attText {
+    return [self attTextFrameWithText:attText maxSize:CGSizeMake(999, 999)];
 }
 
-+ (CGRect)attTextFrameWithText:(NSAttributedString *)text maxSize:(CGSize)maxSize {
-    return [text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin context:nil];
++ (CGRect)attTextFrameWithText:(NSAttributedString *)attText maxSize:(CGSize)maxSize {
+    return [self attTextFrameWithText:attText maxSize:maxSize isOneLine:nil];
+}
+
++ (CGRect)attTextFrameWithText:(NSAttributedString *)attText maxSize:(CGSize)maxSize isOneLine:(BOOL *)isOneLine {
+    CGRect rect;
+    CGFloat lineSpace = 0;
+    NSMutableParagraphStyle *parag = [attText attribute:NSParagraphStyleAttributeName atIndex:0 effectiveRange:NULL];
+    if (parag) {
+        lineSpace = parag.lineSpacing;
+        
+        // 要使用默认的不带省略号的NSLineBreakByWordWrappings来进行计算，才能算出真正高度
+        // 如果用带有省略号的例如"abcd..."这种模式，计算出来的只是一行的高度
+        NSLineBreakMode lineBreakMode = parag.lineBreakMode; // 先记住原本的lineBreakMode
+        parag.lineBreakMode = NSLineBreakByWordWrapping;
+        
+        rect = [attText boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin context:nil];
+        
+        // 还原lineBreakMode，鬼知道是不是还引用着它
+        parag.lineBreakMode = lineBreakMode;
+    } else {
+        rect = [attText boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin context:nil];
+    }
+    
+    UIFont *font = [attText attribute:NSFontAttributeName atIndex:0 effectiveRange:NULL];
+    // 文本的高度 - 字体高度 > 行间距 -----> 判断为当前超过1行
+    BOOL isMoreThanOneLine = (rect.size.height - font.lineHeight) > lineSpace;
+    if (!isMoreThanOneLine) {
+        if ([attText.string jp_containsChinese]) {  //如果包含中文
+            rect.size.height -= lineSpace;
+        }
+    }
+    
+    if (rect.size.height > 0 && rect.size.height < font.pointSize) {
+        rect.size.height = font.pointSize;
+    }
+    
+    if (isOneLine) *isOneLine = !isMoreThanOneLine;
+    
+    return rect;
 }
 
 + (CGFloat)radiusFromCenter:(CGPoint)center point:(CGPoint)point {

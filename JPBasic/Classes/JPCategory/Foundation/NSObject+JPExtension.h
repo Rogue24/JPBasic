@@ -29,4 +29,7 @@
 - (NSInteger)jp_instanceSize;
 
 - (NSInteger)jp_mallocSize;
+
++ (void)jp_swizzleInstanceMethodsWithOriginalSelector:(SEL)originalSelector swizzledSelector:(SEL)swizzledSelector;
++ (void)jp_swizzleClassMethodsWithOriginalSelector:(SEL)originalSelector swizzledSelector:(SEL)swizzledSelector;
 @end

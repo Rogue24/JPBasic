@@ -56,26 +56,28 @@ CG_INLINE NSString * JPFileSizeString(long long fileSize) {
 /** 文件大小 */
 + (unsigned long long)fileSize:(NSString *)filePath;
 
-+ (void)enumeratorAtPath:(NSString *)path enumeratorBlock:(void(^)(NSString *fileName))enumeratorBlock;
+/** 遍历文件夹，block返回YES为退出不再遍历，NO为继续） */
++ (void)enumeratorAtPath:(NSString *)path enumeratorBlock:(BOOL(^)(NSString *fileName, NSString *filePath))enumeratorBlock;
 
+/** 文件夹总大小 */
 + (unsigned long long)calculateFolderSize:(NSString *)folderPath;
-+ (void)calculateFolderSize:(NSString *)folderPath complete:(void(^)(unsigned long long totalSize))complete;
 
+/** 清理文件夹（包括子文件夹） */
 + (void)clearFolder:(NSString *)folderPath;
-+ (void)clearFolder:(NSString *)folderPath complete:(void(^)(void))complete;
+/** 清理文件夹（是否连子文件夹也一同清理） */
++ (void)clearFolder:(NSString *)folderPath isAboutSubFolder:(BOOL)isAboutSubFolder;
 
+/** 归档 */
 + (BOOL)archiveWithRootObject:(id)obj filePath:(NSString *)filePath;
+/** 解档 */
 + (id)unarchivedObjectOfClass:(Class)cls filePath:(NSString *)filePath;
+/** 解档集合 */
 + (id)unarchivedObjectOfClasses:(NSSet<Class> *)clses filePath:(NSString *)filePath;
 
-/**
- * 注册字体
- */
+/** 注册字体 */
 + (NSString *)registerFontWithFilePath:(NSString *)filePath;
 
-/**
- * 解除字体
- */
+/** 解除字体 */
 + (void)unRegisterFontWithFilePath:(NSString *)filePath;
 
 @end

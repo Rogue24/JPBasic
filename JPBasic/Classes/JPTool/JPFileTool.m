@@ -68,53 +68,51 @@
     return [fileInfo fileSize];
 }
 
-+ (void)enumeratorAtPath:(NSString *)path enumeratorBlock:(void(^)(NSString *fileName))enumeratorBlock {
++ (void)enumeratorAtPath:(NSString *)path enumeratorBlock:(BOOL(^)(NSString *, NSString *))enumeratorBlock {
     if (!enumeratorBlock) return;
-    //创建文件遍历器（遍历该文件夹里面的所有文件名）
-    NSDirectoryEnumerator *fileEnumerator = [[NSFileManager defaultManager] enumeratorAtPath:path];
+    // 创建文件遍历器（遍历该文件夹里面的所有文件名）
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSDirectoryEnumerator *fileEnumerator = [fileManager enumeratorAtPath:path];
     for (NSString *fileName in fileEnumerator) {
-        enumeratorBlock(fileName);
+        if (enumeratorBlock(fileName, [path stringByAppendingPathComponent:fileName])) {
+            break;
+        }
     }
 }
 
 + (unsigned long long)calculateFolderSize:(NSString *)folderPath {
     __block unsigned long long size = 0;
-    [self enumeratorAtPath:folderPath enumeratorBlock:^(NSString *fileName) {
-        // 拼接路径
-        NSString *currFilePath = [folderPath stringByAppendingPathComponent:fileName];
+    [self enumeratorAtPath:folderPath enumeratorBlock:^BOOL(NSString *fileName, NSString *filePath) {
         // 获取文件属性（文件大小、创建日期等，但不能获取整个文件夹所有属性(不准确)，只能获取单个）
-        NSDictionary *attrs = [[NSFileManager defaultManager] attributesOfItemAtPath:currFilePath error:nil];
+        NSDictionary *attrs = [[NSFileManager defaultManager] attributesOfItemAtPath:filePath error:nil];
         // 根据NSDictionary的文件类型属性判断，判断文件是不是文件夹，是就跳过
         if (![attrs.fileType isEqualToString:NSFileTypeDirectory]) size += [attrs fileSize];
+        return NO;
     }];
     return size;
 }
 
-+ (void)calculateFolderSize:(NSString *)folderPath complete:(void(^)(unsigned long long totalSize))complete {
-    if (!complete) return;
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        unsigned long long totalSize = [self calculateFolderSize:folderPath];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            complete(totalSize);
-        });
-    });
-}
-
 + (void)clearFolder:(NSString *)folderPath {
-    [self enumeratorAtPath:folderPath enumeratorBlock:^(NSString *fileName) {
-        // 拼接路径
-        NSString *currFilePath = [folderPath stringByAppendingPathComponent:fileName];
-        [self removeFile:currFilePath];
-    }];
+    [self clearFolder:folderPath isAboutSubFolder:YES];
 }
 
-+ (void)clearFolder:(NSString *)folderPath complete:(void(^)(void))complete {
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        [self clearFolder:folderPath];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            !complete ? : complete();
-        });
-    });
++ (void)clearFolder:(NSString *)folderPath isAboutSubFolder:(BOOL)isAboutSubFolder {
+    [self enumeratorAtPath:folderPath enumeratorBlock:^BOOL(NSString *fileName, NSString *filePath) {
+        NSFileManager *fileManager = [NSFileManager defaultManager];
+        BOOL isDirectory;
+        if ([fileManager fileExistsAtPath:filePath isDirectory:&isDirectory]) {
+            if (isAboutSubFolder) {
+                [fileManager removeItemAtPath:filePath error:nil];
+            } else {
+                if (isDirectory) {
+                    [self clearFolder:filePath isAboutSubFolder:isAboutSubFolder];
+                } else {
+                    [fileManager removeItemAtPath:filePath error:nil];
+                }
+            }
+        }
+        return NO;
+    }];
 }
 
 #pragma mark - 归档、解档

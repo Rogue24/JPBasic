@@ -132,4 +132,6 @@ CG_INLINE JPImageType NSPUIImageTypeFromData(NSData *imageData) {
 /** 图片高宽比 */
 - (CGFloat)jp_hwRatio;
 
+/** 图片中间区域切圆 */
+- (UIImage *)jp_imageByRoundWithBorderWidth:(CGFloat)borderWidth borderColor:(UIColor *)borderColor;
 @end

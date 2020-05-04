@@ -130,6 +130,11 @@
 }
 
 + (UIColor *)jp_gradientColorWithColors:(NSArray *)colors locations:(NSArray *)locations startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint size:(CGSize)size {
+    if (colors.count == 0) return nil;
+    if (colors.count == 1) {
+        CGColorRef cgColor = (__bridge CGColorRef)(colors.firstObject);
+        return [UIColor colorWithCGColor:cgColor];
+    }
     UIImage *patternImage = [UIImage jp_gradientImageWithColors:colors locations:locations startPoint:startPoint endPoint:endPoint size:size];
     return [UIColor colorWithPatternImage:patternImage];
 }

@@ -327,27 +327,35 @@
                            cornerRadius:(CGFloat)cornerRadius
                       byRoundingCorners:(UIRectCorner)corners {
     if (colors.count == 0) return nil;
-    if (colors.count == 1) colors = @[colors.firstObject, colors.firstObject];
-    CAGradientLayer *gLayer = [CAGradientLayer layer];
-    gLayer.masksToBounds = YES;
-    gLayer.bounds = CGRectMake(0, 0, size.width, size.height);
-    gLayer.startPoint = startPoint;
-    gLayer.endPoint = endPoint;
-    gLayer.colors = colors;
-    if (locations) gLayer.locations = locations;
-    if (cornerRadius > 0) {
-        if (corners == UIRectCornerAllCorners) {
-            gLayer.cornerRadius = cornerRadius;
-        } else {
-            CAShapeLayer *maskLayer = [CAShapeLayer layer];
-            maskLayer.path = [UIBezierPath bezierPathWithRoundedRect:gLayer.bounds byRoundingCorners:corners cornerRadii:CGSizeMake(cornerRadius, cornerRadius)].CGPath;
-            gLayer.mask = maskLayer;
+    UIImage *gradientImage;
+    if (colors.count == 1) {
+        UIColor *color = [UIColor colorWithCGColor:(__bridge CGColorRef)(colors.firstObject)];
+        gradientImage = [self jp_createImageWithColor:color
+                                                 size:size
+                                         cornerRadius:cornerRadius
+                                    byRoundingCorners:corners];
+    } else {
+        UIGraphicsBeginImageContextWithOptions(size, NO, [UIScreen mainScreen].scale);
+        CAGradientLayer *gLayer = [CAGradientLayer layer];
+        gLayer.masksToBounds = YES;
+        gLayer.bounds = CGRectMake(0, 0, size.width, size.height);
+        gLayer.startPoint = startPoint;
+        gLayer.endPoint = endPoint;
+        gLayer.colors = colors;
+        if (locations) gLayer.locations = locations;
+        if (cornerRadius > 0) {
+            if (corners == UIRectCornerAllCorners) {
+                gLayer.cornerRadius = cornerRadius;
+            } else {
+                CAShapeLayer *maskLayer = [CAShapeLayer layer];
+                maskLayer.path = [UIBezierPath bezierPathWithRoundedRect:gLayer.bounds byRoundingCorners:corners cornerRadii:CGSizeMake(cornerRadius, cornerRadius)].CGPath;
+                gLayer.mask = maskLayer;
+            }
         }
+        [gLayer renderInContext:UIGraphicsGetCurrentContext()];
+        gradientImage = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
     }
-    UIGraphicsBeginImageContextWithOptions(size, NO, [UIScreen mainScreen].scale);
-    [gLayer renderInContext:UIGraphicsGetCurrentContext()];
-    UIImage *gradientImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
     return gradientImage;
 }
 
@@ -738,10 +746,10 @@ static void RGBtoHSV( float r, float g, float b, float *h, float *s, float *v ) 
     }
     NSData *imageData = UIImageJPEGRepresentation(resizeImage, 1.0);
     if (imageData) {
-        *isPNG = NO;
+        if (isPNG) *isPNG = NO;
     } else {
         imageData = UIImagePNGRepresentation(resizeImage);
-        *isPNG = YES;
+        if (isPNG) *isPNG = YES;
     }
     return imageData;
 }
@@ -870,4 +878,46 @@ static void RGBtoHSV( float r, float g, float b, float *h, float *s, float *v ) 
     return (self.size.height / self.size.width);
 }
 
+/** 图片中间区域切圆 */
+- (UIImage *)jp_imageByRoundWithBorderWidth:(CGFloat)borderWidth borderColor:(UIColor *)borderColor {
+    CGFloat w = self.size.width;
+    CGFloat h = self.size.height;
+    CGFloat minSide = MIN(w, h);
+    CGFloat cornerRadius = minSide * 0.5;
+    CGSize size = CGSizeMake(minSide, minSide);
+    
+    if (borderWidth >= cornerRadius) return self;
+    
+    UIGraphicsBeginImageContextWithOptions(size, NO, self.scale);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextScaleCTM(context, 1, -1);
+    CGContextTranslateCTM(context, 0, -size.height);
+    
+    UIRectCorner corners = UIRectCornerAllCorners;
+    CGRect roundRect = (CGRect){CGPointZero, size};
+    
+    UIBezierPath *roundPath = [UIBezierPath bezierPathWithRoundedRect:roundRect byRoundingCorners:corners cornerRadii:CGSizeMake(cornerRadius, 0)];
+    [roundPath closePath];
+    [roundPath addClip];
+    
+    CGRect rect = (CGRect){CGPointMake((size.width - w) * 0.5, (size.height - h) * 0.5), self.size};
+    CGContextDrawImage(context, rect, self.CGImage);
+    
+    if (borderWidth > 0 && borderColor) {
+        CGFloat strokeInset = borderWidth * 0.5;
+        CGRect strokeRect = CGRectInset(roundRect, strokeInset, strokeInset);
+        CGFloat strokeRadius = strokeRect.size.width * 0.5;
+        
+        UIBezierPath *strokePath = [UIBezierPath bezierPathWithRoundedRect:strokeRect byRoundingCorners:corners cornerRadii:CGSizeMake(strokeRadius, 0)];
+        [strokePath closePath];
+        strokePath.lineWidth = borderWidth;
+        
+        [borderColor setStroke];
+        [strokePath stroke];
+    }
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
 @end

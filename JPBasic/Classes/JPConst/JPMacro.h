@@ -9,20 +9,6 @@
 #ifndef JPMacro_h
 #define JPMacro_h
 
-/** 格式化系统日志 */
-#ifdef DEBUG
-#define NSLog(...) NSLog(__VA_ARGS__)
-#else
-#define NSLog(...)                      
-#endif
-
-/** 自定义日志 */
-#ifdef DEBUG
-#define JPLog(format, ...) printf("[%s] %s [第%d行] %s\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
-#else
-#define JPLog(format, ...)
-#endif
-
 /** mainScreen */
 #define JPScreenBounds [UIScreen mainScreen].bounds
 #define JPScreenSize [UIScreen mainScreen].bounds.size
