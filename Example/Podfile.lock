@@ -1,22 +1,22 @@
 PODS:
-  - JPBasic (0.1.1):
-    - JPBasic/JPCategory (= 0.1.1)
-    - JPBasic/JPConst (= 0.1.1)
-    - JPBasic/JPCustomUnit (= 0.1.1)
-    - JPBasic/JPProgressHUD (= 0.1.1)
-    - JPBasic/JPTool (= 0.1.1)
-  - JPBasic/JPCategory (0.1.1):
+  - JPBasic (0.1.2):
+    - JPBasic/JPCategory (= 0.1.2)
+    - JPBasic/JPConst (= 0.1.2)
+    - JPBasic/JPCustomUnit (= 0.1.2)
+    - JPBasic/JPProgressHUD (= 0.1.2)
+    - JPBasic/JPTool (= 0.1.2)
+  - JPBasic/JPCategory (0.1.2):
     - JPBasic/JPConst
     - Masonry
     - pop
-  - JPBasic/JPConst (0.1.1)
-  - JPBasic/JPCustomUnit (0.1.1):
+  - JPBasic/JPConst (0.1.2)
+  - JPBasic/JPCustomUnit (0.1.2):
     - JPBasic/JPCategory
     - JPBasic/JPConst
     - JPBasic/JPTool
-  - JPBasic/JPProgressHUD (0.1.1):
+  - JPBasic/JPProgressHUD (0.1.2):
     - SVProgressHUD
-  - JPBasic/JPTool (0.1.1):
+  - JPBasic/JPTool (0.1.2):
     - JPBasic/JPCategory
     - JPBasic/JPConst
     - YYText
@@ -40,7 +40,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JPBasic: b879e89e3d7076956a007c6cae13df54098015ee
+  JPBasic: 0e9c125855ec33ad4d0787bfd19725d36d967115
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
