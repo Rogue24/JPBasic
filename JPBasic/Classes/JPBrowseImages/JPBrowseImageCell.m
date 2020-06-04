@@ -8,7 +8,7 @@
 
 #import "JPBrowseImageCell.h"
 #import "JPBrowseImagesViewController.h"
-#import "JPSolveTool.h"
+#import "JPInline.h"
 #import "JPMacro.h"
 
 @interface JPBrowseImageCell () <UIScrollViewDelegate>

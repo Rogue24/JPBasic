@@ -7,7 +7,7 @@
 //
 
 #import "JPBrowseImageModel.h"
-#import "JPSolveTool.h"
+#import "JPInline.h"
 
 @implementation JPBrowseImageModel
 

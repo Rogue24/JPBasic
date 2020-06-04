@@ -7,7 +7,7 @@
 //
 
 #import "JPBrowseImagesTopView.h"
-#import "JPSolveTool.h"
+#import "JPInline.h"
 
 @interface JPBrowseImagesTopView ()
 @property (nonatomic, weak) UILabel *indexLabel;

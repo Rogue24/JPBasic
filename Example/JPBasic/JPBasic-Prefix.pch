@@ -16,6 +16,8 @@
 
 #define MAS_SHORTHAND_GLOBALS
 #import <Masonry/Masonry.h>
+
+#import "JPInline.h"
 #import "JPSolveTool.h"
 #import "JPMacro.h"
 #import "UIView+JPExtension.h"

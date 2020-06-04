@@ -28,6 +28,7 @@
 #import "UIViewController+JPExtension.h"
 #import "UIWindow+JPExtension.h"
 #import "JPConstant.h"
+#import "JPInline.h"
 #import "JPMacro.h"
 #import "JPCustomLayoutButton.h"
 #import "JPIconButton.h"
