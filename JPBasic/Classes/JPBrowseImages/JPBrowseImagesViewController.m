@@ -8,7 +8,6 @@
 
 #import "JPBrowseImagesViewController.h"
 #import "JPBrowseImagesTransition.h"
-#import "JPBrowseImageCell.h"
 #import "JPBrowseImagesTopView.h"
 #import "JPBrowseImagesBottomView.h"
 #import "JPConstant.h"
