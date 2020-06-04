@@ -46,7 +46,7 @@
     self.backgroundColor = UIColor.clearColor;
     
     UIScrollView *scrollView = [[UIScrollView alloc] init];
-    [scrollView jp_contentInsetAdjustmentNever];
+    if (@available(iOS 11.0, *)) scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     scrollView.frame = JPPortraitScreenBounds;
     scrollView.delegate = self;
     scrollView.minimumZoomScale = 1.0;

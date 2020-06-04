@@ -257,7 +257,11 @@ static NSInteger const JPViewMargin = 10;
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(-JPViewMargin * 0.5, 0, JPPortraitScreenWidth + JPViewMargin, JPPortraitScreenHeight) collectionViewLayout:layout];
-    [self jp_contentInsetAdjustmentNever:collectionView];
+    if (@available(iOS 11.0, *)) {
+        collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
     collectionView.backgroundColor = UIColor.clearColor;
     collectionView.delegate = self;
     collectionView.dataSource = self;
