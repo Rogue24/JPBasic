@@ -10,6 +10,12 @@
 #endif
 #endif
 
+#import "JPBrowseImageCell.h"
+#import "JPBrowseImageModel.h"
+#import "JPBrowseImagesBottomView.h"
+#import "JPBrowseImagesTopView.h"
+#import "JPBrowseImagesTransition.h"
+#import "JPBrowseImagesViewController.h"
 #import "NSDate+JPExtension.h"
 #import "NSObject+JPExtension.h"
 #import "NSString+JPExtension.h"

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JPBasic'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'Develop commonly used category, tool, macros, constants.'
 
 # This description is used to generate tags and improve search results.
@@ -58,6 +58,14 @@ Pod::Spec.new do |s|
       e.dependency 'JPBasic/JPConst'
       e.dependency 'JPBasic/JPCategory'
       e.dependency 'JPBasic/JPTool'
+  end
+  
+  s.subspec 'JPBrowseImages' do |f|
+      f.source_files = 'JPBasic/Classes/JPBrowseImages/**/*'
+      f.dependency 'JPBasic/JPConst'
+      f.resource_bundles = {
+        'JPBrowseImages' => ['JPBasic/Assets/JPBrowseImages/*']
+      }
   end
   
   # s.resource_bundles = {

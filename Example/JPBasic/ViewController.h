@@ -1,5 +1,5 @@
 //
-//  JPViewController.h
+//  ViewController.h
 //  JPBasic
 //
 //  Created by zhoujianping24@hotmail.com on 03/18/2020.
@@ -8,6 +8,6 @@
 
 @import UIKit;
 
-@interface JPViewController : UIViewController
+@interface ViewController : UIViewController
 
 @end
