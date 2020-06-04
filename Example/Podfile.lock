@@ -32,7 +32,7 @@ DEPENDENCIES:
   - JPBasic (from `../`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - Masonry
     - pop
     - SVProgressHUD
