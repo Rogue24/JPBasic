@@ -19,7 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = JPRandomColor;
-    
+}
+
+- (void)abc {
     JPStartPauseButton *spBtn = [JPStartPauseButton startPauseButton];
     spBtn.center = CGPointMake(JPPortraitScreenWidth * 0.5, JPPortraitScreenHeight * 0.5);
     [self.view addSubview:spBtn];
