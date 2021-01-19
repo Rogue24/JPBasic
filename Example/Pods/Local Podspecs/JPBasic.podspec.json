@@ -1,6 +1,6 @@
 {
   "name": "JPBasic",
-  "version": "0.1.4",
+  "version": "0.1.7",
   "summary": "Develop commonly used category, tool, macros, constants.",
   "description": "开发常用的分类、工具类、宏、常量。",
   "homepage": "https://github.com/Rogue24/JPBasic",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Rogue24/JPBasic.git",
-    "tag": "0.1.4"
+    "tag": "0.1.7"
   },
   "platforms": {
     "ios": "8.0"
