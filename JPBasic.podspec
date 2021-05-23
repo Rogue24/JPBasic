@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JPBasic'
-  s.version          = '0.1.7'
+  s.version          = '0.1.8'
   s.summary          = 'Develop commonly used category, tool, macros, constants.'
 
 # This description is used to generate tags and improve search results.

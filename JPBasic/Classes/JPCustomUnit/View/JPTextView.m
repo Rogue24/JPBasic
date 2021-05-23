@@ -206,7 +206,11 @@ CGFloat const JPCursorMargin = 5.0;
         NSRange offsetRange = NSMakeRange(startOffset, endOffset - startOffset);
         
         // 起始位置有没有超过限制字数
-        if (offsetRange.location < self.maxLimitNums) {
+        NSInteger maxLimitNums = self.maxLimitNums;
+        if (self.isNotCountInLineBreak) {
+            maxLimitNums += [textView.text componentsSeparatedByString:@"\n"].count - 1;
+        }
+        if (offsetRange.location < maxLimitNums) {
             return YES;
         } else {
             !self.reachMaxLimitNums ? : self.reachMaxLimitNums(self.maxLimitNums);
