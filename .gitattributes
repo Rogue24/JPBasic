@@ -7,3 +7,12 @@ Example/JPBasic/公共/Resource/Car.jpg filter=lfs diff=lfs merge=lfs -text
 Example/JPBasic/公共/Resource/yaorenmao_dance.mp4 filter=lfs diff=lfs merge=lfs -text
 Example/JPBasic/公共/Resource/Matteo-Panama.mp3 filter=lfs diff=lfs merge=lfs -text
 Example/JPBasic/公共/Resource/iphone-11.mp4 filter=lfs diff=lfs merge=lfs -text
+Example/JPBasic/Resource/testVideo2.mp4 filter=lfs diff=lfs merge=lfs -text
+Example/JPBasic/Resource/minion_01.mp4 filter=lfs diff=lfs merge=lfs -text
+Example/JPBasic/Resource/huanjie.gif filter=lfs diff=lfs merge=lfs -text
+Example/JPBasic/Resource/iphone-11-pro.mp4 filter=lfs diff=lfs merge=lfs -text
+Example/JPBasic/Resource/big_image.jpg filter=lfs diff=lfs merge=lfs -text
+Example/JPBasic/Resource/Car.jpg filter=lfs diff=lfs merge=lfs -text
+Example/JPBasic/Resource/yaorenmao_dance.mp4 filter=lfs diff=lfs merge=lfs -text
+Example/JPBasic/Resource/Matteo-Panama.mp3 filter=lfs diff=lfs merge=lfs -text
+Example/JPBasic/Resource/iphone-11.mp4 filter=lfs diff=lfs merge=lfs -text
