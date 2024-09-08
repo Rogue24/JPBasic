@@ -11,12 +11,6 @@
 @interface JPDeviceTool : NSObject
 + (NSString *)deviceName;
 + (NSString *)systemVersion;
-
-+ (BOOL)isPortrait;
-+ (UIDeviceOrientation)currentOrientation;
-+ (void)switchDeviceOrientation:(UIDeviceOrientation)orientation;
-
 + (int)getSignalIntensity:(BOOL)isWiFi;
-
 + (BOOL)goApplicationOpenSettings;
 @end

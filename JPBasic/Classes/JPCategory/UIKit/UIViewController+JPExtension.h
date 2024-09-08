@@ -15,6 +15,7 @@
 - (void)jp_contentInsetAdjustmentNever:(UIScrollView *)scrollView;
 - (BOOL)jp_isRootViewController;
 - (void)jp_popVC;
+- (void)jp_dismissAll;
 @property (nonatomic, assign) BOOL jp_isHideNavigationBar;
 @property (nonatomic, assign) BOOL jp_isNotAutoSetBackBarButtonItem;
 @end

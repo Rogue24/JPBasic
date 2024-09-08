@@ -1,31 +1,33 @@
 PODS:
-  - JPBasic (0.1.8):
-    - JPBasic/JPBrowseImages (= 0.1.8)
-    - JPBasic/JPCategory (= 0.1.8)
-    - JPBasic/JPConst (= 0.1.8)
-    - JPBasic/JPCustomUnit (= 0.1.8)
-    - JPBasic/JPProgressHUD (= 0.1.8)
-    - JPBasic/JPTool (= 0.1.8)
-  - JPBasic/JPBrowseImages (0.1.8):
+  - JPBasic (0.2.0):
+    - JPBasic/JPBrowseImages (= 0.2.0)
+    - JPBasic/JPCategory (= 0.2.0)
+    - JPBasic/JPConst (= 0.2.0)
+    - JPBasic/JPCustomUnit (= 0.2.0)
+    - JPBasic/JPProgressHUD (= 0.2.0)
+    - JPBasic/JPTool (= 0.2.0)
+  - JPBasic/JPBrowseImages (0.2.0):
     - JPBasic/JPConst
-  - JPBasic/JPCategory (0.1.8):
+  - JPBasic/JPCategory (0.2.0):
     - JPBasic/JPConst
     - Masonry
     - pop
-  - JPBasic/JPConst (0.1.8)
-  - JPBasic/JPCustomUnit (0.1.8):
+  - JPBasic/JPConst (0.2.0)
+  - JPBasic/JPCustomUnit (0.2.0):
     - JPBasic/JPCategory
     - JPBasic/JPConst
     - JPBasic/JPTool
-  - JPBasic/JPProgressHUD (0.1.8):
+  - JPBasic/JPProgressHUD (0.2.0):
     - SVProgressHUD
-  - JPBasic/JPTool (0.1.8):
+  - JPBasic/JPTool (0.2.0):
     - JPBasic/JPCategory
     - JPBasic/JPConst
     - YYText
   - Masonry (1.1.0)
   - pop (1.0.12)
-  - SVProgressHUD (2.2.5)
+  - SVProgressHUD (2.3.1):
+    - SVProgressHUD/Core (= 2.3.1)
+  - SVProgressHUD/Core (2.3.1)
   - YYText (1.0.7)
 
 DEPENDENCIES:
@@ -43,12 +45,12 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JPBasic: 5a0459823fd51d7a02aea924227e971a0d8778b3
+  JPBasic: 7b9f6b440204e7b765f9678bb97d7f1633141d7e
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
-  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 71de24ee7bfa878b7a2679d205fcf774c3692731
+PODFILE CHECKSUM: 82b28698aa58716e7e28df70b725d9b61c1a2127
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.15.2

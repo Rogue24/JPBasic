@@ -94,21 +94,44 @@ static CGSize wideVideoPlayerPortraitSize_;
         pageSheetPortraitScreenHeight_ -= (is_iphoneX_ ? 54.0 : 40.0);
     }
     
-    tabBarH_ = baseTabBarH_;
+    diffTabBarH_ = is_iphoneX_ ? 34.0 : 0;
     if (@available(iOS 11.0, *)) {
         UIWindow *window = [UIApplication sharedApplication].delegate.window;
         if (!window) window = [UIApplication sharedApplication].windows.firstObject;
         if (window) {
             diffTabBarH_ = window.safeAreaInsets.bottom;
+        }
+    }
+    tabBarH_ = baseTabBarH_ + diffTabBarH_;
+    
+    if (is_iphoneX_) {
+        if (@available(iOS 13.0, *)) {
+            statusBarH_ = 48.0;
         } else {
-            diffTabBarH_ = is_iphoneX_ ? 34.0 : 0;
+            statusBarH_ = 44.0;
         }
     } else {
-        diffTabBarH_ = is_iphoneX_ ? 34.0 : 0;
+        statusBarH_ = baseStatusBarH_;
     }
-    tabBarH_ += diffTabBarH_;
-    
-    statusBarH_ = [UIApplication sharedApplication].statusBarFrame.size.height;
+    if (@available(iOS 11.0, *)) {
+        UIWindow *window = [UIApplication sharedApplication].delegate.window;
+        if (!window) window = [UIApplication sharedApplication].windows.firstObject;
+        if (window) {
+            statusBarH_ = window.safeAreaInsets.top;
+            if (@available(iOS 13.0, *)) {
+                UIStatusBarManager *statusBarManager = window.windowScene.statusBarManager;
+                if (statusBarManager) {
+                    statusBarH_ = statusBarManager.statusBarFrame.size.height;
+                }
+            }
+        } else {
+            if (@available(iOS 13.0, *)) {} else {
+                statusBarH_ = [UIApplication sharedApplication].statusBarFrame.size.height;
+            }
+        }
+    } else {
+        statusBarH_ = [UIApplication sharedApplication].statusBarFrame.size.height;
+    }
     diffStatusBarH_ = statusBarH_ - baseStatusBarH_;
     
     navTopMargin_ = statusBarH_ + navBarH_;

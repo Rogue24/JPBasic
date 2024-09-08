@@ -45,6 +45,11 @@
     _fpsColor = UIColor.whiteColor;
     
     _link = [CADisplayLink displayLinkWithTarget:JPTargetProxy(self) selector:@selector(tick:)];
+    if (@available(iOS 10.3, *)) {
+        _link.preferredFramesPerSecond = UIScreen.mainScreen.maximumFramesPerSecond;
+    } else {
+        // Fallback on earlier versions
+    }
     [_link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
     return self;
 }

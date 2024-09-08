@@ -1,13 +1,8 @@
 use_frameworks!
 
-platform :ios, '8.0'
+platform :ios, '13.0'
 
 target 'JPBasic_Example' do
   pod 'JPBasic', :path => '../'
-
-  target 'JPBasic_Tests' do
-    inherit! :search_paths
-
-    
-  end
+  
 end

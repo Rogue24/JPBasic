@@ -42,6 +42,39 @@
     }
 }
 
+- (void)jp_dismissAll {
+    [self jp_dismissAllWithIsDetachAllFlutter:YES];
+}
+
+- (void)jp_dismissAllWithIsDetachAllFlutter:(BOOL)isDetachAllFlutter {
+//    if (isDetachAllFlutter) {
+//        [self jp_detachAllFlutter];
+//    }
+    
+    if (self.presentedViewController) {
+        [self dismissViewControllerAnimated:NO completion:nil];
+    }
+    
+    for (UIViewController *childVC in self.childViewControllers) {
+        [childVC jp_dismissAllWithIsDetachAllFlutter:NO];
+    }
+}
+
+//- (void)jp_detachAllFlutter {
+//    if (self.presentedViewController) {
+//        [self.presentedViewController jp_detachAllFlutter];
+//    }
+//
+//    for (UIViewController *childVC in self.childViewControllers) {
+//        [childVC jp_detachAllFlutter];
+//    }
+//
+//    if ([self isKindOfClass:[QWFlutterViewController class]]) {
+//        QWFlutterViewController *fvc = (QWFlutterViewController *)self;
+//        [fvc detachFlutter];
+//    }
+//}
+
 - (void)setJp_isHideNavigationBar:(BOOL)jp_isHideNavigationBar {
     objc_setAssociatedObject(self, @selector(jp_isHideNavigationBar), @(jp_isHideNavigationBar), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
