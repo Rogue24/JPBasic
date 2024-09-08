@@ -319,7 +319,6 @@
 			isa = PBXGroup;
 			children = (
 				00E4BD662C7DA1E900D1C9EB /* JPWebImage */,
-				00E4BC6D2C7DA0FF00D1C9EB /* Resource */,
 			);
 			path = "公共";
 			sourceTree = "<group>";
@@ -500,6 +499,7 @@
 				00E4BC752C7DA0FF00D1C9EB /* 公共 */,
 				00BB8EFD2C8C60C300131B47 /* ThirdLib */,
 				1AA9560224DA6DA000411773 /* WTVCrash */,
+				00E4BC6D2C7DA0FF00D1C9EB /* Resource */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for JPBasic";
