@@ -9,7 +9,7 @@ touch .gitattributes
 # 初始化一个数组用于存储已跟踪文件
 tracked_files=()
 
-echo "① 检查当前路径下的 .gitattributes 中已经跟踪的文件列表"
+echo "【1】检查当前路径下的 .gitattributes 中已经跟踪的文件列表"
 if [ -f ".gitattributes" ]; then
     # 从 .gitattributes 文件中提取已经跟踪的文件列表
     while IFS= read -r line; do
@@ -25,7 +25,7 @@ if [ -f ".gitattributes" ]; then
     done < .gitattributes
 fi
 
-echo "② 查找大于限制的文件并处理..."
+echo "【2】查找大于限制的文件并处理..."
 find . -type f ! -path "./.git/*" | while read -r file; do
     size=$(wc -c <"$file")
     if [ $size -gt $LIMIT ]; then
@@ -50,7 +50,7 @@ find . -type f ! -path "./.git/*" | while read -r file; do
 done
 
 # 检查已被 LFS 跟踪的文件是否存在，并移除不存在的文件
-echo "③ 检查已被 LFS 跟踪的文件..."
+echo "【3】检查已被 LFS 跟踪的文件..."
 git lfs ls-files | awk '{print $3}' | while read -r lfs_file; do
     if [ ! -f "$lfs_file" ]; then
         echo "LFS 文件 $lfs_file 已被删除，移除其 LFS 记录..."
