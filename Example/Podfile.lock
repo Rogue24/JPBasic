@@ -1,4 +1,5 @@
 PODS:
+  - FunnyButton (0.1.5)
   - JPBasic (0.2.0):
     - JPBasic/JPBrowseImages (= 0.2.0)
     - JPBasic/JPCategory (= 0.2.0)
@@ -23,6 +24,11 @@ PODS:
     - JPBasic/JPCategory
     - JPBasic/JPConst
     - YYText
+  - LookinServer (1.2.8):
+    - LookinServer/Core (= 1.2.8)
+  - LookinServer/Core (1.2.8)
+  - LookinServer/Swift (1.2.8):
+    - LookinServer/Core
   - Masonry (1.1.0)
   - pop (1.0.12)
   - SVProgressHUD (2.3.1):
@@ -31,10 +37,15 @@ PODS:
   - YYText (1.0.7)
 
 DEPENDENCIES:
+  - FunnyButton
   - JPBasic (from `../`)
+  - LookinServer
+  - LookinServer/Swift
 
 SPEC REPOS:
   trunk:
+    - FunnyButton
+    - LookinServer
     - Masonry
     - pop
     - SVProgressHUD
@@ -45,12 +56,14 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  FunnyButton: e8202ece176aaa5f7ead1e5c8eb0f29d28fc5ad4
   JPBasic: 7b9f6b440204e7b765f9678bb97d7f1633141d7e
+  LookinServer: 1b2b61c6402ae29fa22182d48f5cd067b4e99e80
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 82b28698aa58716e7e28df70b725d9b61c1a2127
+PODFILE CHECKSUM: 2eb41bea024517cd70a57935aa38fb352b9ccb07
 
 COCOAPODS: 1.15.2

@@ -5,4 +5,10 @@ platform :ios, '13.0'
 target 'JPBasic_Example' do
   pod 'JPBasic', :path => '../'
   
+  pod 'FunnyButton', :configurations => ['Debug']
+  pod 'LookinServer', :configurations => ['Debug']
+# 当你使用 Swift 创建 UIView 时，你可能发现 Lookin 无法显示变量名：
+# https://bytedance.larkoffice.com/docx/GFRLdzpeKoakeyxvwgCcZ5XdnTb
+  pod 'LookinServer', :subspecs => ['Swift'], :configurations => ['Debug']
+  
 end
