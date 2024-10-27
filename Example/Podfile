@@ -1,9 +1,32 @@
+platform :ios, '13.0'
+
+inhibit_all_warnings!
 use_frameworks!
 
-platform :ios, '13.0'
+post_install do |installer|
+  
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+         end
+    end
+  end
+  
+end
 
 target 'JPBasic_Example' do
   pod 'JPBasic', :path => '../'
+  
+  pod 'lottie-ios', '~> 2.5.3'
+  pod 'JPLiquidLayout'
+  pod 'MJExtension'
+  pod 'MJRefresh'
+  pod 'AFNetworking'
+  pod 'FMDB'
+  pod 'GPUImage_Local', :path => './GPUImage_Local'
+  pod 'FunnyButton'
+  pod 'SDWebImage'
   
   pod 'FunnyButton', :configurations => ['Debug']
   pod 'LookinServer', :configurations => ['Debug']
