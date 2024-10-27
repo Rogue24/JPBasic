@@ -2,14 +2,14 @@
 //  Use this file to import your target's public headers that you would like to expose to Swift.
 //
 
-#import "JPInline.h"
-#import "JPSolveTool.h"
-#import "JPMacro.h"
+//#import "JPInline.h"
+//#import "JPSolveTool.h"
+//#import "JPMacro.h"
 #import "UIView+JPExtension.h"
 #import "UIView+JPPOP.h"
 #import "UIColor+JPExtension.h"
 #import "JPProgressHUD.h"
-#import "JPPhotoTool.h"
+//#import "JPPhotoTool.h"
 #import "JPFileTool.h"
 #import "UIViewController+JPExtension.h"
 #import "AVPlayerViewController+JPExtension.h"
@@ -19,7 +19,7 @@
 #import "NSObject+JPExtension.h"
 #import "NSString+JPExtension.h"
 #import "JPProxy.h"
-#import "JPHTTPSessionManager.h"
+//#import "JPHTTPSessionManager.h"
 #import "NSURL+JPExtension.h"
 #import "JPWebImageManager.h"
 #import "JPRoundImageManager.h"
