@@ -26,7 +26,7 @@
     self.title = @"测试代码";
     
     JPFPSLabel *fpsLabel = [JPFPSLabel new];
-    fpsLabel.jp_origin = CGPointMake(40, JPPortraitScreenHeight - fpsLabel.jp_height - 5);
+    fpsLabel.jp_origin = CGPointMake(40, JPPortraitScreenHeight - JPDiffTabBarH - fpsLabel.jp_height - 5);
     fpsLabel.layer.zPosition = 999;
     [JPKeyWindow addSubview:fpsLabel];
     
@@ -58,7 +58,8 @@
                           @"JPGCDTargetQueueViewController",
                           @"JPVideoTestViewController"],
 #pragma mark 代码
-                        @[@"JPTableTestUpdateViewController",
+                        @[@"JPPhotoViewController",
+                          @"JPTableTestUpdateViewController",
                           @"SDWebImageTestViewController",
                           @"JPNSCacheViewController",
                           @"JPSwizzleTestViewController",
@@ -91,7 +92,6 @@
                           @"JPMasonryTestViewController",
                           @"JPLottieTestViewController",
                           @"JPTestViewController",
-                          @"JPPhotoViewController",
                           @"JPRedPackageRainViewController",
                           @"JPScrollViewController",
                           @"JPImageViewTestViewController",

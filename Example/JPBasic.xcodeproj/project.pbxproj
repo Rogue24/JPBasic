@@ -64,6 +64,68 @@
 		007B94572CD2782E00739B8D /* WTVRedPackageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94252CD2782E00739B8D /* WTVRedPackageModel.m */; };
 		007B94582CD2782E00739B8D /* WTVRedPackageTrafficPrizesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B943E2CD2782E00739B8D /* WTVRedPackageTrafficPrizesView.m */; };
 		007B94592CD2782E00739B8D /* WTVRedPacketPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94332CD2782E00739B8D /* WTVRedPacketPopView.m */; };
+		007B94612CD27B1D00739B8D /* UINavigationController+JPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94602CD27B1D00739B8D /* UINavigationController+JPExtension.m */; };
+		007B94E52CD27B8300739B8D /* 小端模式下数据以32位为单位的颜色通道图.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 007B94B72CD27B8300739B8D /* 小端模式下数据以32位为单位的颜色通道图.jpg */; };
+		007B94E62CD27B8300739B8D /* 美颜滤镜的组合.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 007B94A12CD27B8300739B8D /* 美颜滤镜的组合.jpg */; };
+		007B94E72CD27B8300739B8D /* FilterResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 007B94A72CD27B8300739B8D /* FilterResource.bundle */; };
+		007B94E82CD27B8300739B8D /* 套路.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 007B94702CD27B8300739B8D /* 套路.jpg */; };
+		007B94E92CD27B8300739B8D /* JPBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B946E2CD27B8300739B8D /* JPBlock.m */; };
+		007B94EA2CD27B8300739B8D /* JPGCDTargetQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B949F2CD27B8300739B8D /* JPGCDTargetQueueViewController.m */; };
+		007B94EB2CD27B8300739B8D /* JPCameraTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B947B2CD27B8300739B8D /* JPCameraTestViewController.m */; };
+		007B94EC2CD27B8300739B8D /* WLVideoInterceptionPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94882CD27B8300739B8D /* WLVideoInterceptionPreviewView.m */; };
+		007B94ED2CD27B8300739B8D /* JPCutVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94722CD27B8300739B8D /* JPCutVideoViewController.m */; };
+		007B94EE2CD27B8300739B8D /* JPScrollViewDelegateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94DC2CD27B8300739B8D /* JPScrollViewDelegateController.m */; };
+		007B94EF2CD27B8300739B8D /* JPImageVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94742CD27B8300739B8D /* JPImageVideoViewController.m */; };
+		007B94F02CD27B8300739B8D /* JPBarrierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94992CD27B8300739B8D /* JPBarrierViewController.m */; };
+		007B94F12CD27B8300739B8D /* JPWebImageTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94C52CD27B8300739B8D /* JPWebImageTestViewController.m */; };
+		007B94F22CD27B8300739B8D /* JPImageXuanzhuanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94BF2CD27B8300739B8D /* JPImageXuanzhuanViewController.m */; };
+		007B94F32CD27B8300739B8D /* LFGPUImageBeautyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94A52CD27B8300739B8D /* LFGPUImageBeautyFilter.m */; };
+		007B94F42CD27B8300739B8D /* JPTestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94DE2CD27B8300739B8D /* JPTestCollectionViewController.m */; };
+		007B94F52CD27B8300739B8D /* JPNotiTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94CF2CD27B8300739B8D /* JPNotiTestViewController.m */; };
+		007B94F62CD27B8300739B8D /* JPTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94D12CD27B8300739B8D /* JPTestViewController.m */; };
+		007B94F72CD27B8300739B8D /* JPImageMaskTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94B92CD27B8300739B8D /* JPImageMaskTestViewController.m */; };
+		007B94F82CD27B8300739B8D /* SDWebImageTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94C92CD27B8300739B8D /* SDWebImageTestViewController.m */; };
+		007B94F92CD27B8300739B8D /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94A32CD27B8300739B8D /* GPUImageBeautifyFilter.m */; };
+		007B94FA2CD27B8300739B8D /* JPResPathTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94D72CD27B8300739B8D /* JPResPathTestViewController.m */; };
+		007B94FB2CD27B8300739B8D /* JPWatermarkElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94AF2CD27B8300739B8D /* JPWatermarkElement.m */; };
+		007B94FC2CD27B8300739B8D /* JPTextTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94D32CD27B8300739B8D /* JPTextTestViewController.m */; };
+		007B94FD2CD27B8300739B8D /* JPImageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94B52CD27B8300739B8D /* JPImageFilter.m */; };
+		007B94FE2CD27B8300739B8D /* JPGCDSemaphoreTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B949D2CD27B8300739B8D /* JPGCDSemaphoreTestViewController.m */; };
+		007B94FF2CD27B8300739B8D /* JPSwizzleTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94632CD27B8300739B8D /* JPSwizzleTestViewController.m */; };
+		007B95002CD27B8300739B8D /* JPScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94DA2CD27B8300739B8D /* JPScrollViewController.m */; };
+		007B95012CD27B8300739B8D /* JPImageresizerSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94C32CD27B8300739B8D /* JPImageresizerSlider.m */; };
+		007B95022CD27B8300739B8D /* JPImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94C12CD27B8300739B8D /* JPImageViewController.m */; };
+		007B95032CD27B8300739B8D /* JPLoadBigImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94BD2CD27B8300739B8D /* JPLoadBigImageViewController.m */; };
+		007B95042CD27B8300739B8D /* TCIFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94782CD27B8300739B8D /* TCIFilterViewController.m */; };
+		007B95052CD27B8300739B8D /* JPGPUImageMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94B12CD27B8300739B8D /* JPGPUImageMovieViewController.m */; };
+		007B95062CD27B8300739B8D /* JPSystemImagePickerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94902CD27B8300739B8D /* JPSystemImagePickerTool.m */; };
+		007B95072CD27B8300739B8D /* JPBBBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B946C2CD27B8300739B8D /* JPBBBViewController.m */; };
+		007B95082CD27B8300739B8D /* JPTestHashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94D52CD27B8300739B8D /* JPTestHashViewController.m */; };
+		007B95092CD27B8300739B8D /* JPMovieWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94AD2CD27B8300739B8D /* JPMovieWriter.m */; };
+		007B950A2CD27B8300739B8D /* JPVideoTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94812CD27B8300739B8D /* JPVideoTestViewController.m */; };
+		007B950B2CD27B8300739B8D /* JPGCDSpecificTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B949B2CD27B8300739B8D /* JPGCDSpecificTestViewController.m */; };
+		007B950C2CD27B8300739B8D /* WLBlurButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94922CD27B8300739B8D /* WLBlurButton.m */; };
+		007B950D2CD27B8300739B8D /* JPFMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94962CD27B8300739B8D /* JPFMDBViewController.m */; };
+		007B950E2CD27B8300739B8D /* JPTXLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94762CD27B8300739B8D /* JPTXLiveViewController.m */; };
+		007B950F2CD27B8300739B8D /* JPMasonryTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94CC2CD27B8300739B8D /* JPMasonryTestViewController.m */; };
+		007B95102CD27B8300739B8D /* JPCaptureVideoPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B947D2CD27B8300739B8D /* JPCaptureVideoPreviewView.m */; };
+		007B95112CD27B8300739B8D /* JPShapeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94E12CD27B8300739B8D /* JPShapeTestViewController.m */; };
+		007B95122CD27B8300739B8D /* WLRecordConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94842CD27B8300739B8D /* WLRecordConfirmViewController.m */; };
+		007B95132CD27B8300739B8D /* JPImageViewTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94BB2CD27B8300739B8D /* JPImageViewTestViewController.m */; };
+		007B95142CD27B8300739B8D /* JPCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B947F2CD27B8300739B8D /* JPCaptureViewController.m */; };
+		007B95152CD27B8300739B8D /* AVPlayer+SeekSmoothly.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94862CD27B8300739B8D /* AVPlayer+SeekSmoothly.m */; };
+		007B95162CD27B8300739B8D /* WLVideoInterceptionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B948C2CD27B8300739B8D /* WLVideoInterceptionTool.m */; };
+		007B95172CD27B8300739B8D /* WLVideoInterceptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B948E2CD27B8300739B8D /* WLVideoInterceptionViewController.m */; };
+		007B95182CD27B8300739B8D /* GPUImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94A92CD27B8300739B8D /* GPUImageViewController.m */; };
+		007B95192CD27B8300739B8D /* JPGPUImageSingleFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94B32CD27B8300739B8D /* JPGPUImageSingleFilterViewController.m */; };
+		007B951A2CD27B8300739B8D /* JPGPUImageCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94AB2CD27B8300739B8D /* JPGPUImageCameraViewController.m */; };
+		007B951B2CD27B8300739B8D /* WLVideoInterceptionThumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B948A2CD27B8300739B8D /* WLVideoInterceptionThumbnail.m */; };
+		007B951C2CD27B8300739B8D /* JPNSCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94672CD27B8300739B8D /* JPNSCacheViewController.m */; };
+		007B951D2CD27B8300739B8D /* JPBlockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B946A2CD27B8300739B8D /* JPBlockTestViewController.m */; };
+		007B951E2CD27B8300739B8D /* JPResizableImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94C72CD27B8300739B8D /* JPResizableImageViewController.m */; };
+		007B951F2CD27B8300739B8D /* JPGradientTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94E32CD27B8300739B8D /* JPGradientTestViewController.m */; };
+		007B95202CD27B8300739B8D /* JPSwizzleTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B94652CD27B8300739B8D /* JPSwizzleTestView.m */; };
+		007B95232CD27C1800739B8D /* UIImage+YYImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B95222CD27C1800739B8D /* UIImage+YYImageExtension.m */; };
 		00BB8F002C8D830C00131B47 /* iphone-11-pro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 00BB8EFF2C8D830C00131B47 /* iphone-11-pro.mp4 */; };
 		00E4BC7D2C7DA0FF00D1C9EB /* 1001.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 00E4BC5B2C7DA0FF00D1C9EB /* 1001.MP4 */; };
 		00E4BC7E2C7DA0FF00D1C9EB /* big_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00E4BC5C2C7DA0FF00D1C9EB /* big_image.jpg */; };
@@ -266,6 +328,126 @@
 		007B94452CD2782E00739B8D /* JPRedPackageRainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPRedPackageRainViewController.m; sourceTree = "<group>"; };
 		007B94462CD2782E00739B8D /* WTVRedPackageRainManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTVRedPackageRainManager.h; sourceTree = "<group>"; };
 		007B94472CD2782E00739B8D /* WTVRedPackageRainManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTVRedPackageRainManager.m; sourceTree = "<group>"; };
+		007B945F2CD27B1D00739B8D /* UINavigationController+JPExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+JPExtension.h"; sourceTree = "<group>"; };
+		007B94602CD27B1D00739B8D /* UINavigationController+JPExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+JPExtension.m"; sourceTree = "<group>"; };
+		007B94622CD27B8300739B8D /* JPSwizzleTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPSwizzleTestViewController.h; sourceTree = "<group>"; };
+		007B94632CD27B8300739B8D /* JPSwizzleTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPSwizzleTestViewController.m; sourceTree = "<group>"; };
+		007B94642CD27B8300739B8D /* JPSwizzleTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPSwizzleTestView.h; sourceTree = "<group>"; };
+		007B94652CD27B8300739B8D /* JPSwizzleTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPSwizzleTestView.m; sourceTree = "<group>"; };
+		007B94662CD27B8300739B8D /* JPNSCacheViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPNSCacheViewController.h; sourceTree = "<group>"; };
+		007B94672CD27B8300739B8D /* JPNSCacheViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPNSCacheViewController.m; sourceTree = "<group>"; };
+		007B94692CD27B8300739B8D /* JPBlockTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPBlockTestViewController.h; sourceTree = "<group>"; };
+		007B946A2CD27B8300739B8D /* JPBlockTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPBlockTestViewController.m; sourceTree = "<group>"; };
+		007B946B2CD27B8300739B8D /* JPBBBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPBBBViewController.h; sourceTree = "<group>"; };
+		007B946C2CD27B8300739B8D /* JPBBBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPBBBViewController.m; sourceTree = "<group>"; };
+		007B946D2CD27B8300739B8D /* JPBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPBlock.h; sourceTree = "<group>"; };
+		007B946E2CD27B8300739B8D /* JPBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPBlock.m; sourceTree = "<group>"; };
+		007B94702CD27B8300739B8D /* 套路.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "套路.jpg"; sourceTree = "<group>"; };
+		007B94712CD27B8300739B8D /* JPCutVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPCutVideoViewController.h; sourceTree = "<group>"; };
+		007B94722CD27B8300739B8D /* JPCutVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPCutVideoViewController.m; sourceTree = "<group>"; };
+		007B94732CD27B8300739B8D /* JPImageVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPImageVideoViewController.h; sourceTree = "<group>"; };
+		007B94742CD27B8300739B8D /* JPImageVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPImageVideoViewController.m; sourceTree = "<group>"; };
+		007B94752CD27B8300739B8D /* JPTXLiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPTXLiveViewController.h; sourceTree = "<group>"; };
+		007B94762CD27B8300739B8D /* JPTXLiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPTXLiveViewController.m; sourceTree = "<group>"; };
+		007B94772CD27B8300739B8D /* TCIFilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCIFilterViewController.h; sourceTree = "<group>"; };
+		007B94782CD27B8300739B8D /* TCIFilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCIFilterViewController.m; sourceTree = "<group>"; };
+		007B947A2CD27B8300739B8D /* JPCameraTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPCameraTestViewController.h; sourceTree = "<group>"; };
+		007B947B2CD27B8300739B8D /* JPCameraTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPCameraTestViewController.m; sourceTree = "<group>"; };
+		007B947C2CD27B8300739B8D /* JPCaptureVideoPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPCaptureVideoPreviewView.h; sourceTree = "<group>"; };
+		007B947D2CD27B8300739B8D /* JPCaptureVideoPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPCaptureVideoPreviewView.m; sourceTree = "<group>"; };
+		007B947E2CD27B8300739B8D /* JPCaptureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPCaptureViewController.h; sourceTree = "<group>"; };
+		007B947F2CD27B8300739B8D /* JPCaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPCaptureViewController.m; sourceTree = "<group>"; };
+		007B94802CD27B8300739B8D /* JPVideoTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPVideoTestViewController.h; sourceTree = "<group>"; };
+		007B94812CD27B8300739B8D /* JPVideoTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPVideoTestViewController.m; sourceTree = "<group>"; };
+		007B94832CD27B8300739B8D /* WLRecordConfirmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLRecordConfirmViewController.h; sourceTree = "<group>"; };
+		007B94842CD27B8300739B8D /* WLRecordConfirmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLRecordConfirmViewController.m; sourceTree = "<group>"; };
+		007B94852CD27B8300739B8D /* AVPlayer+SeekSmoothly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVPlayer+SeekSmoothly.h"; sourceTree = "<group>"; };
+		007B94862CD27B8300739B8D /* AVPlayer+SeekSmoothly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AVPlayer+SeekSmoothly.m"; sourceTree = "<group>"; };
+		007B94872CD27B8300739B8D /* WLVideoInterceptionPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLVideoInterceptionPreviewView.h; sourceTree = "<group>"; };
+		007B94882CD27B8300739B8D /* WLVideoInterceptionPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLVideoInterceptionPreviewView.m; sourceTree = "<group>"; };
+		007B94892CD27B8300739B8D /* WLVideoInterceptionThumbnail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLVideoInterceptionThumbnail.h; sourceTree = "<group>"; };
+		007B948A2CD27B8300739B8D /* WLVideoInterceptionThumbnail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLVideoInterceptionThumbnail.m; sourceTree = "<group>"; };
+		007B948B2CD27B8300739B8D /* WLVideoInterceptionTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLVideoInterceptionTool.h; sourceTree = "<group>"; };
+		007B948C2CD27B8300739B8D /* WLVideoInterceptionTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLVideoInterceptionTool.m; sourceTree = "<group>"; };
+		007B948D2CD27B8300739B8D /* WLVideoInterceptionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLVideoInterceptionViewController.h; sourceTree = "<group>"; };
+		007B948E2CD27B8300739B8D /* WLVideoInterceptionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLVideoInterceptionViewController.m; sourceTree = "<group>"; };
+		007B948F2CD27B8300739B8D /* JPSystemImagePickerTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPSystemImagePickerTool.h; sourceTree = "<group>"; };
+		007B94902CD27B8300739B8D /* JPSystemImagePickerTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPSystemImagePickerTool.m; sourceTree = "<group>"; };
+		007B94912CD27B8300739B8D /* WLBlurButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLBlurButton.h; sourceTree = "<group>"; };
+		007B94922CD27B8300739B8D /* WLBlurButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLBlurButton.m; sourceTree = "<group>"; };
+		007B94952CD27B8300739B8D /* JPFMDBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPFMDBViewController.h; sourceTree = "<group>"; };
+		007B94962CD27B8300739B8D /* JPFMDBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPFMDBViewController.m; sourceTree = "<group>"; };
+		007B94982CD27B8300739B8D /* JPBarrierViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPBarrierViewController.h; sourceTree = "<group>"; };
+		007B94992CD27B8300739B8D /* JPBarrierViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPBarrierViewController.m; sourceTree = "<group>"; };
+		007B949A2CD27B8300739B8D /* JPGCDSpecificTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPGCDSpecificTestViewController.h; sourceTree = "<group>"; };
+		007B949B2CD27B8300739B8D /* JPGCDSpecificTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPGCDSpecificTestViewController.m; sourceTree = "<group>"; };
+		007B949C2CD27B8300739B8D /* JPGCDSemaphoreTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPGCDSemaphoreTestViewController.h; sourceTree = "<group>"; };
+		007B949D2CD27B8300739B8D /* JPGCDSemaphoreTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPGCDSemaphoreTestViewController.m; sourceTree = "<group>"; };
+		007B949E2CD27B8300739B8D /* JPGCDTargetQueueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPGCDTargetQueueViewController.h; sourceTree = "<group>"; };
+		007B949F2CD27B8300739B8D /* JPGCDTargetQueueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPGCDTargetQueueViewController.m; sourceTree = "<group>"; };
+		007B94A12CD27B8300739B8D /* 美颜滤镜的组合.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美颜滤镜的组合.jpg"; sourceTree = "<group>"; };
+		007B94A22CD27B8300739B8D /* GPUImageBeautifyFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyFilter.h; sourceTree = "<group>"; };
+		007B94A32CD27B8300739B8D /* GPUImageBeautifyFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyFilter.m; sourceTree = "<group>"; };
+		007B94A42CD27B8300739B8D /* LFGPUImageBeautyFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFGPUImageBeautyFilter.h; sourceTree = "<group>"; };
+		007B94A52CD27B8300739B8D /* LFGPUImageBeautyFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFGPUImageBeautyFilter.m; sourceTree = "<group>"; };
+		007B94A72CD27B8300739B8D /* FilterResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FilterResource.bundle; sourceTree = "<group>"; };
+		007B94A82CD27B8300739B8D /* GPUImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImageViewController.h; sourceTree = "<group>"; };
+		007B94A92CD27B8300739B8D /* GPUImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImageViewController.m; sourceTree = "<group>"; };
+		007B94AA2CD27B8300739B8D /* JPGPUImageCameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPGPUImageCameraViewController.h; sourceTree = "<group>"; };
+		007B94AB2CD27B8300739B8D /* JPGPUImageCameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPGPUImageCameraViewController.m; sourceTree = "<group>"; };
+		007B94AC2CD27B8300739B8D /* JPMovieWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPMovieWriter.h; sourceTree = "<group>"; };
+		007B94AD2CD27B8300739B8D /* JPMovieWriter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPMovieWriter.m; sourceTree = "<group>"; };
+		007B94AE2CD27B8300739B8D /* JPWatermarkElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPWatermarkElement.h; sourceTree = "<group>"; };
+		007B94AF2CD27B8300739B8D /* JPWatermarkElement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPWatermarkElement.m; sourceTree = "<group>"; };
+		007B94B02CD27B8300739B8D /* JPGPUImageMovieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPGPUImageMovieViewController.h; sourceTree = "<group>"; };
+		007B94B12CD27B8300739B8D /* JPGPUImageMovieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPGPUImageMovieViewController.m; sourceTree = "<group>"; };
+		007B94B22CD27B8300739B8D /* JPGPUImageSingleFilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPGPUImageSingleFilterViewController.h; sourceTree = "<group>"; };
+		007B94B32CD27B8300739B8D /* JPGPUImageSingleFilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPGPUImageSingleFilterViewController.m; sourceTree = "<group>"; };
+		007B94B42CD27B8300739B8D /* JPImageFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPImageFilter.h; sourceTree = "<group>"; };
+		007B94B52CD27B8300739B8D /* JPImageFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPImageFilter.m; sourceTree = "<group>"; };
+		007B94B72CD27B8300739B8D /* 小端模式下数据以32位为单位的颜色通道图.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "小端模式下数据以32位为单位的颜色通道图.jpg"; sourceTree = "<group>"; };
+		007B94B82CD27B8300739B8D /* JPImageMaskTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPImageMaskTestViewController.h; sourceTree = "<group>"; };
+		007B94B92CD27B8300739B8D /* JPImageMaskTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPImageMaskTestViewController.m; sourceTree = "<group>"; };
+		007B94BA2CD27B8300739B8D /* JPImageViewTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPImageViewTestViewController.h; sourceTree = "<group>"; };
+		007B94BB2CD27B8300739B8D /* JPImageViewTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPImageViewTestViewController.m; sourceTree = "<group>"; };
+		007B94BC2CD27B8300739B8D /* JPLoadBigImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPLoadBigImageViewController.h; sourceTree = "<group>"; };
+		007B94BD2CD27B8300739B8D /* JPLoadBigImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPLoadBigImageViewController.m; sourceTree = "<group>"; };
+		007B94BE2CD27B8300739B8D /* JPImageXuanzhuanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPImageXuanzhuanViewController.h; sourceTree = "<group>"; };
+		007B94BF2CD27B8300739B8D /* JPImageXuanzhuanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPImageXuanzhuanViewController.m; sourceTree = "<group>"; };
+		007B94C02CD27B8300739B8D /* JPImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPImageViewController.h; sourceTree = "<group>"; };
+		007B94C12CD27B8300739B8D /* JPImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPImageViewController.m; sourceTree = "<group>"; };
+		007B94C22CD27B8300739B8D /* JPImageresizerSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPImageresizerSlider.h; sourceTree = "<group>"; };
+		007B94C32CD27B8300739B8D /* JPImageresizerSlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPImageresizerSlider.m; sourceTree = "<group>"; };
+		007B94C42CD27B8300739B8D /* JPWebImageTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPWebImageTestViewController.h; sourceTree = "<group>"; };
+		007B94C52CD27B8300739B8D /* JPWebImageTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPWebImageTestViewController.m; sourceTree = "<group>"; };
+		007B94C62CD27B8300739B8D /* JPResizableImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPResizableImageViewController.h; sourceTree = "<group>"; };
+		007B94C72CD27B8300739B8D /* JPResizableImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPResizableImageViewController.m; sourceTree = "<group>"; };
+		007B94C82CD27B8300739B8D /* SDWebImageTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImageTestViewController.h; sourceTree = "<group>"; };
+		007B94C92CD27B8300739B8D /* SDWebImageTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageTestViewController.m; sourceTree = "<group>"; };
+		007B94CB2CD27B8300739B8D /* JPMasonryTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPMasonryTestViewController.h; sourceTree = "<group>"; };
+		007B94CC2CD27B8300739B8D /* JPMasonryTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPMasonryTestViewController.m; sourceTree = "<group>"; };
+		007B94CE2CD27B8300739B8D /* JPNotiTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPNotiTestViewController.h; sourceTree = "<group>"; };
+		007B94CF2CD27B8300739B8D /* JPNotiTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPNotiTestViewController.m; sourceTree = "<group>"; };
+		007B94D02CD27B8300739B8D /* JPTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPTestViewController.h; sourceTree = "<group>"; };
+		007B94D12CD27B8300739B8D /* JPTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPTestViewController.m; sourceTree = "<group>"; };
+		007B94D22CD27B8300739B8D /* JPTextTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPTextTestViewController.h; sourceTree = "<group>"; };
+		007B94D32CD27B8300739B8D /* JPTextTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPTextTestViewController.m; sourceTree = "<group>"; };
+		007B94D42CD27B8300739B8D /* JPTestHashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPTestHashViewController.h; sourceTree = "<group>"; };
+		007B94D52CD27B8300739B8D /* JPTestHashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPTestHashViewController.m; sourceTree = "<group>"; };
+		007B94D62CD27B8300739B8D /* JPResPathTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPResPathTestViewController.h; sourceTree = "<group>"; };
+		007B94D72CD27B8300739B8D /* JPResPathTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPResPathTestViewController.m; sourceTree = "<group>"; };
+		007B94D92CD27B8300739B8D /* JPScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPScrollViewController.h; sourceTree = "<group>"; };
+		007B94DA2CD27B8300739B8D /* JPScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPScrollViewController.m; sourceTree = "<group>"; };
+		007B94DB2CD27B8300739B8D /* JPScrollViewDelegateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPScrollViewDelegateController.h; sourceTree = "<group>"; };
+		007B94DC2CD27B8300739B8D /* JPScrollViewDelegateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPScrollViewDelegateController.m; sourceTree = "<group>"; };
+		007B94DD2CD27B8300739B8D /* JPTestCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPTestCollectionViewController.h; sourceTree = "<group>"; };
+		007B94DE2CD27B8300739B8D /* JPTestCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPTestCollectionViewController.m; sourceTree = "<group>"; };
+		007B94E02CD27B8300739B8D /* JPShapeTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPShapeTestViewController.h; sourceTree = "<group>"; };
+		007B94E12CD27B8300739B8D /* JPShapeTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPShapeTestViewController.m; sourceTree = "<group>"; };
+		007B94E22CD27B8300739B8D /* JPGradientTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPGradientTestViewController.h; sourceTree = "<group>"; };
+		007B94E32CD27B8300739B8D /* JPGradientTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPGradientTestViewController.m; sourceTree = "<group>"; };
+		007B95212CD27C1800739B8D /* UIImage+YYImageExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+YYImageExtension.h"; sourceTree = "<group>"; };
+		007B95222CD27C1800739B8D /* UIImage+YYImageExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YYImageExtension.m"; sourceTree = "<group>"; };
 		00BB8EFF2C8D830C00131B47 /* iphone-11-pro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iphone-11-pro.mp4"; sourceTree = "<group>"; };
 		00E4BC5B2C7DA0FF00D1C9EB /* 1001.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1001.MP4; sourceTree = "<group>"; };
 		00E4BC5C2C7DA0FF00D1C9EB /* big_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = big_image.jpg; sourceTree = "<group>"; };
@@ -714,6 +896,7 @@
 			children = (
 				007B945C2CD278B400739B8D /* Views */,
 				007B945D2CD278BB00739B8D /* Buttons */,
+				007B945E2CD27B0900739B8D /* Extensions */,
 			);
 			path = JP_Common;
 			sourceTree = "<group>";
@@ -721,6 +904,17 @@
 		007B945B2CD278A600739B8D /* JP_Examples */ = {
 			isa = PBXGroup;
 			children = (
+				007B94682CD27B8300739B8D /* Example_Base */,
+				007B94E42CD27B8300739B8D /* Example_Layer */,
+				007B94DF2CD27B8300739B8D /* Example_Scroll */,
+				007B94CA2CD27B8300739B8D /* Example_Image */,
+				007B94942CD27B8300739B8D /* Example_Video */,
+				007B946F2CD27B8300739B8D /* Example_Block */,
+				007B94A02CD27B8300739B8D /* Example_GCD */,
+				007B94B62CD27B8300739B8D /* Example_GPUImage */,
+				007B94CD2CD27B8300739B8D /* Example_Masonry */,
+				007B94972CD27B8300739B8D /* Example_FMDB */,
+				007B94D82CD27B8300739B8D /* Example_Other */,
 			);
 			path = JP_Examples;
 			sourceTree = "<group>";
@@ -739,6 +933,242 @@
 				1A902DC22463ED590089D740 /* JPStartPauseButton.m */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		007B945E2CD27B0900739B8D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				007B945F2CD27B1D00739B8D /* UINavigationController+JPExtension.h */,
+				007B94602CD27B1D00739B8D /* UINavigationController+JPExtension.m */,
+				007B95212CD27C1800739B8D /* UIImage+YYImageExtension.h */,
+				007B95222CD27C1800739B8D /* UIImage+YYImageExtension.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		007B94682CD27B8300739B8D /* Example_Base */ = {
+			isa = PBXGroup;
+			children = (
+				007B94622CD27B8300739B8D /* JPSwizzleTestViewController.h */,
+				007B94632CD27B8300739B8D /* JPSwizzleTestViewController.m */,
+				007B94642CD27B8300739B8D /* JPSwizzleTestView.h */,
+				007B94652CD27B8300739B8D /* JPSwizzleTestView.m */,
+				007B94662CD27B8300739B8D /* JPNSCacheViewController.h */,
+				007B94672CD27B8300739B8D /* JPNSCacheViewController.m */,
+			);
+			path = Example_Base;
+			sourceTree = "<group>";
+		};
+		007B946F2CD27B8300739B8D /* Example_Block */ = {
+			isa = PBXGroup;
+			children = (
+				007B94692CD27B8300739B8D /* JPBlockTestViewController.h */,
+				007B946A2CD27B8300739B8D /* JPBlockTestViewController.m */,
+				007B946B2CD27B8300739B8D /* JPBBBViewController.h */,
+				007B946C2CD27B8300739B8D /* JPBBBViewController.m */,
+				007B946D2CD27B8300739B8D /* JPBlock.h */,
+				007B946E2CD27B8300739B8D /* JPBlock.m */,
+			);
+			path = Example_Block;
+			sourceTree = "<group>";
+		};
+		007B94792CD27B8300739B8D /* 视频滤镜 */ = {
+			isa = PBXGroup;
+			children = (
+				007B94772CD27B8300739B8D /* TCIFilterViewController.h */,
+				007B94782CD27B8300739B8D /* TCIFilterViewController.m */,
+			);
+			path = "视频滤镜";
+			sourceTree = "<group>";
+		};
+		007B94822CD27B8300739B8D /* 视频录制 */ = {
+			isa = PBXGroup;
+			children = (
+				007B947A2CD27B8300739B8D /* JPCameraTestViewController.h */,
+				007B947B2CD27B8300739B8D /* JPCameraTestViewController.m */,
+				007B947C2CD27B8300739B8D /* JPCaptureVideoPreviewView.h */,
+				007B947D2CD27B8300739B8D /* JPCaptureVideoPreviewView.m */,
+				007B947E2CD27B8300739B8D /* JPCaptureViewController.h */,
+				007B947F2CD27B8300739B8D /* JPCaptureViewController.m */,
+				007B94802CD27B8300739B8D /* JPVideoTestViewController.h */,
+				007B94812CD27B8300739B8D /* JPVideoTestViewController.m */,
+			);
+			path = "视频录制";
+			sourceTree = "<group>";
+		};
+		007B94932CD27B8300739B8D /* 视频截取 */ = {
+			isa = PBXGroup;
+			children = (
+				007B94832CD27B8300739B8D /* WLRecordConfirmViewController.h */,
+				007B94842CD27B8300739B8D /* WLRecordConfirmViewController.m */,
+				007B94852CD27B8300739B8D /* AVPlayer+SeekSmoothly.h */,
+				007B94862CD27B8300739B8D /* AVPlayer+SeekSmoothly.m */,
+				007B94872CD27B8300739B8D /* WLVideoInterceptionPreviewView.h */,
+				007B94882CD27B8300739B8D /* WLVideoInterceptionPreviewView.m */,
+				007B94892CD27B8300739B8D /* WLVideoInterceptionThumbnail.h */,
+				007B948A2CD27B8300739B8D /* WLVideoInterceptionThumbnail.m */,
+				007B948B2CD27B8300739B8D /* WLVideoInterceptionTool.h */,
+				007B948C2CD27B8300739B8D /* WLVideoInterceptionTool.m */,
+				007B948D2CD27B8300739B8D /* WLVideoInterceptionViewController.h */,
+				007B948E2CD27B8300739B8D /* WLVideoInterceptionViewController.m */,
+				007B948F2CD27B8300739B8D /* JPSystemImagePickerTool.h */,
+				007B94902CD27B8300739B8D /* JPSystemImagePickerTool.m */,
+				007B94912CD27B8300739B8D /* WLBlurButton.h */,
+				007B94922CD27B8300739B8D /* WLBlurButton.m */,
+			);
+			path = "视频截取";
+			sourceTree = "<group>";
+		};
+		007B94942CD27B8300739B8D /* Example_Video */ = {
+			isa = PBXGroup;
+			children = (
+				007B94702CD27B8300739B8D /* 套路.jpg */,
+				007B94712CD27B8300739B8D /* JPCutVideoViewController.h */,
+				007B94722CD27B8300739B8D /* JPCutVideoViewController.m */,
+				007B94732CD27B8300739B8D /* JPImageVideoViewController.h */,
+				007B94742CD27B8300739B8D /* JPImageVideoViewController.m */,
+				007B94752CD27B8300739B8D /* JPTXLiveViewController.h */,
+				007B94762CD27B8300739B8D /* JPTXLiveViewController.m */,
+				007B94792CD27B8300739B8D /* 视频滤镜 */,
+				007B94822CD27B8300739B8D /* 视频录制 */,
+				007B94932CD27B8300739B8D /* 视频截取 */,
+			);
+			path = Example_Video;
+			sourceTree = "<group>";
+		};
+		007B94972CD27B8300739B8D /* Example_FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				007B94952CD27B8300739B8D /* JPFMDBViewController.h */,
+				007B94962CD27B8300739B8D /* JPFMDBViewController.m */,
+			);
+			path = Example_FMDB;
+			sourceTree = "<group>";
+		};
+		007B94A02CD27B8300739B8D /* Example_GCD */ = {
+			isa = PBXGroup;
+			children = (
+				007B94982CD27B8300739B8D /* JPBarrierViewController.h */,
+				007B94992CD27B8300739B8D /* JPBarrierViewController.m */,
+				007B949A2CD27B8300739B8D /* JPGCDSpecificTestViewController.h */,
+				007B949B2CD27B8300739B8D /* JPGCDSpecificTestViewController.m */,
+				007B949C2CD27B8300739B8D /* JPGCDSemaphoreTestViewController.h */,
+				007B949D2CD27B8300739B8D /* JPGCDSemaphoreTestViewController.m */,
+				007B949E2CD27B8300739B8D /* JPGCDTargetQueueViewController.h */,
+				007B949F2CD27B8300739B8D /* JPGCDTargetQueueViewController.m */,
+			);
+			path = Example_GCD;
+			sourceTree = "<group>";
+		};
+		007B94A62CD27B8300739B8D /* BeautifyFilter */ = {
+			isa = PBXGroup;
+			children = (
+				007B94A12CD27B8300739B8D /* 美颜滤镜的组合.jpg */,
+				007B94A22CD27B8300739B8D /* GPUImageBeautifyFilter.h */,
+				007B94A32CD27B8300739B8D /* GPUImageBeautifyFilter.m */,
+				007B94A42CD27B8300739B8D /* LFGPUImageBeautyFilter.h */,
+				007B94A52CD27B8300739B8D /* LFGPUImageBeautyFilter.m */,
+			);
+			path = BeautifyFilter;
+			sourceTree = "<group>";
+		};
+		007B94B62CD27B8300739B8D /* Example_GPUImage */ = {
+			isa = PBXGroup;
+			children = (
+				007B94A62CD27B8300739B8D /* BeautifyFilter */,
+				007B94A72CD27B8300739B8D /* FilterResource.bundle */,
+				007B94A82CD27B8300739B8D /* GPUImageViewController.h */,
+				007B94A92CD27B8300739B8D /* GPUImageViewController.m */,
+				007B94AA2CD27B8300739B8D /* JPGPUImageCameraViewController.h */,
+				007B94AB2CD27B8300739B8D /* JPGPUImageCameraViewController.m */,
+				007B94AC2CD27B8300739B8D /* JPMovieWriter.h */,
+				007B94AD2CD27B8300739B8D /* JPMovieWriter.m */,
+				007B94AE2CD27B8300739B8D /* JPWatermarkElement.h */,
+				007B94AF2CD27B8300739B8D /* JPWatermarkElement.m */,
+				007B94B02CD27B8300739B8D /* JPGPUImageMovieViewController.h */,
+				007B94B12CD27B8300739B8D /* JPGPUImageMovieViewController.m */,
+				007B94B22CD27B8300739B8D /* JPGPUImageSingleFilterViewController.h */,
+				007B94B32CD27B8300739B8D /* JPGPUImageSingleFilterViewController.m */,
+				007B94B42CD27B8300739B8D /* JPImageFilter.h */,
+				007B94B52CD27B8300739B8D /* JPImageFilter.m */,
+			);
+			path = Example_GPUImage;
+			sourceTree = "<group>";
+		};
+		007B94CA2CD27B8300739B8D /* Example_Image */ = {
+			isa = PBXGroup;
+			children = (
+				007B94B72CD27B8300739B8D /* 小端模式下数据以32位为单位的颜色通道图.jpg */,
+				007B94B82CD27B8300739B8D /* JPImageMaskTestViewController.h */,
+				007B94B92CD27B8300739B8D /* JPImageMaskTestViewController.m */,
+				007B94BA2CD27B8300739B8D /* JPImageViewTestViewController.h */,
+				007B94BB2CD27B8300739B8D /* JPImageViewTestViewController.m */,
+				007B94BC2CD27B8300739B8D /* JPLoadBigImageViewController.h */,
+				007B94BD2CD27B8300739B8D /* JPLoadBigImageViewController.m */,
+				007B94BE2CD27B8300739B8D /* JPImageXuanzhuanViewController.h */,
+				007B94BF2CD27B8300739B8D /* JPImageXuanzhuanViewController.m */,
+				007B94C02CD27B8300739B8D /* JPImageViewController.h */,
+				007B94C12CD27B8300739B8D /* JPImageViewController.m */,
+				007B94C22CD27B8300739B8D /* JPImageresizerSlider.h */,
+				007B94C32CD27B8300739B8D /* JPImageresizerSlider.m */,
+				007B94C42CD27B8300739B8D /* JPWebImageTestViewController.h */,
+				007B94C52CD27B8300739B8D /* JPWebImageTestViewController.m */,
+				007B94C62CD27B8300739B8D /* JPResizableImageViewController.h */,
+				007B94C72CD27B8300739B8D /* JPResizableImageViewController.m */,
+				007B94C82CD27B8300739B8D /* SDWebImageTestViewController.h */,
+				007B94C92CD27B8300739B8D /* SDWebImageTestViewController.m */,
+			);
+			path = Example_Image;
+			sourceTree = "<group>";
+		};
+		007B94CD2CD27B8300739B8D /* Example_Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				007B94CB2CD27B8300739B8D /* JPMasonryTestViewController.h */,
+				007B94CC2CD27B8300739B8D /* JPMasonryTestViewController.m */,
+			);
+			path = Example_Masonry;
+			sourceTree = "<group>";
+		};
+		007B94D82CD27B8300739B8D /* Example_Other */ = {
+			isa = PBXGroup;
+			children = (
+				007B94CE2CD27B8300739B8D /* JPNotiTestViewController.h */,
+				007B94CF2CD27B8300739B8D /* JPNotiTestViewController.m */,
+				007B94D02CD27B8300739B8D /* JPTestViewController.h */,
+				007B94D12CD27B8300739B8D /* JPTestViewController.m */,
+				007B94D22CD27B8300739B8D /* JPTextTestViewController.h */,
+				007B94D32CD27B8300739B8D /* JPTextTestViewController.m */,
+				007B94D42CD27B8300739B8D /* JPTestHashViewController.h */,
+				007B94D52CD27B8300739B8D /* JPTestHashViewController.m */,
+				007B94D62CD27B8300739B8D /* JPResPathTestViewController.h */,
+				007B94D72CD27B8300739B8D /* JPResPathTestViewController.m */,
+			);
+			path = Example_Other;
+			sourceTree = "<group>";
+		};
+		007B94DF2CD27B8300739B8D /* Example_Scroll */ = {
+			isa = PBXGroup;
+			children = (
+				007B94D92CD27B8300739B8D /* JPScrollViewController.h */,
+				007B94DA2CD27B8300739B8D /* JPScrollViewController.m */,
+				007B94DB2CD27B8300739B8D /* JPScrollViewDelegateController.h */,
+				007B94DC2CD27B8300739B8D /* JPScrollViewDelegateController.m */,
+				007B94DD2CD27B8300739B8D /* JPTestCollectionViewController.h */,
+				007B94DE2CD27B8300739B8D /* JPTestCollectionViewController.m */,
+			);
+			path = Example_Scroll;
+			sourceTree = "<group>";
+		};
+		007B94E42CD27B8300739B8D /* Example_Layer */ = {
+			isa = PBXGroup;
+			children = (
+				007B94E02CD27B8300739B8D /* JPShapeTestViewController.h */,
+				007B94E12CD27B8300739B8D /* JPShapeTestViewController.m */,
+				007B94E22CD27B8300739B8D /* JPGradientTestViewController.h */,
+				007B94E32CD27B8300739B8D /* JPGradientTestViewController.m */,
+			);
+			path = Example_Layer;
 			sourceTree = "<group>";
 		};
 		00BB8EFD2C8C60C300131B47 /* ThirdLib */ = {
@@ -1123,6 +1553,10 @@
 				007B939E2CD26F3E00739B8D /* JPJSON.json in Resources */,
 				00E4BC892C7DA0FF00D1C9EB /* sssssss.json in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				007B94E52CD27B8300739B8D /* 小端模式下数据以32位为单位的颜色通道图.jpg in Resources */,
+				007B94E62CD27B8300739B8D /* 美颜滤镜的组合.jpg in Resources */,
+				007B94E72CD27B8300739B8D /* FilterResource.bundle in Resources */,
+				007B94E82CD27B8300739B8D /* 套路.jpg in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				00E4BC812C7DA0FF00D1C9EB /* huanqiang.png in Resources */,
@@ -1266,6 +1700,7 @@
 				007B944F2CD2782E00739B8D /* JPRedPackageRainViewController.m in Sources */,
 				007B94502CD2782E00739B8D /* WTVRedPackageView.m in Sources */,
 				007B94512CD2782E00739B8D /* WTVRedPackageRainViewController.m in Sources */,
+				007B94612CD27B1D00739B8D /* UINavigationController+JPExtension.m in Sources */,
 				007B94522CD2782E00739B8D /* WTVRedPackagePendantView.m in Sources */,
 				007B94532CD2782E00739B8D /* WTVRedPackageRewardViewController.m in Sources */,
 				007B94542CD2782E00739B8D /* WTVRedPackageRainUIBuildTool.m in Sources */,
@@ -1282,6 +1717,63 @@
 				007B93C12CD2701E00739B8D /* JPPhotoCollectionViewFlowLayout.m in Sources */,
 				007B93C22CD2701E00739B8D /* NoDataView.m in Sources */,
 				007B93C32CD2701E00739B8D /* JPPhotoCell.m in Sources */,
+				007B94E92CD27B8300739B8D /* JPBlock.m in Sources */,
+				007B94EA2CD27B8300739B8D /* JPGCDTargetQueueViewController.m in Sources */,
+				007B94EB2CD27B8300739B8D /* JPCameraTestViewController.m in Sources */,
+				007B94EC2CD27B8300739B8D /* WLVideoInterceptionPreviewView.m in Sources */,
+				007B94ED2CD27B8300739B8D /* JPCutVideoViewController.m in Sources */,
+				007B95232CD27C1800739B8D /* UIImage+YYImageExtension.m in Sources */,
+				007B94EE2CD27B8300739B8D /* JPScrollViewDelegateController.m in Sources */,
+				007B94EF2CD27B8300739B8D /* JPImageVideoViewController.m in Sources */,
+				007B94F02CD27B8300739B8D /* JPBarrierViewController.m in Sources */,
+				007B94F12CD27B8300739B8D /* JPWebImageTestViewController.m in Sources */,
+				007B94F22CD27B8300739B8D /* JPImageXuanzhuanViewController.m in Sources */,
+				007B94F32CD27B8300739B8D /* LFGPUImageBeautyFilter.m in Sources */,
+				007B94F42CD27B8300739B8D /* JPTestCollectionViewController.m in Sources */,
+				007B94F52CD27B8300739B8D /* JPNotiTestViewController.m in Sources */,
+				007B94F62CD27B8300739B8D /* JPTestViewController.m in Sources */,
+				007B94F72CD27B8300739B8D /* JPImageMaskTestViewController.m in Sources */,
+				007B94F82CD27B8300739B8D /* SDWebImageTestViewController.m in Sources */,
+				007B94F92CD27B8300739B8D /* GPUImageBeautifyFilter.m in Sources */,
+				007B94FA2CD27B8300739B8D /* JPResPathTestViewController.m in Sources */,
+				007B94FB2CD27B8300739B8D /* JPWatermarkElement.m in Sources */,
+				007B94FC2CD27B8300739B8D /* JPTextTestViewController.m in Sources */,
+				007B94FD2CD27B8300739B8D /* JPImageFilter.m in Sources */,
+				007B94FE2CD27B8300739B8D /* JPGCDSemaphoreTestViewController.m in Sources */,
+				007B94FF2CD27B8300739B8D /* JPSwizzleTestViewController.m in Sources */,
+				007B95002CD27B8300739B8D /* JPScrollViewController.m in Sources */,
+				007B95012CD27B8300739B8D /* JPImageresizerSlider.m in Sources */,
+				007B95022CD27B8300739B8D /* JPImageViewController.m in Sources */,
+				007B95032CD27B8300739B8D /* JPLoadBigImageViewController.m in Sources */,
+				007B95042CD27B8300739B8D /* TCIFilterViewController.m in Sources */,
+				007B95052CD27B8300739B8D /* JPGPUImageMovieViewController.m in Sources */,
+				007B95062CD27B8300739B8D /* JPSystemImagePickerTool.m in Sources */,
+				007B95072CD27B8300739B8D /* JPBBBViewController.m in Sources */,
+				007B95082CD27B8300739B8D /* JPTestHashViewController.m in Sources */,
+				007B95092CD27B8300739B8D /* JPMovieWriter.m in Sources */,
+				007B950A2CD27B8300739B8D /* JPVideoTestViewController.m in Sources */,
+				007B950B2CD27B8300739B8D /* JPGCDSpecificTestViewController.m in Sources */,
+				007B950C2CD27B8300739B8D /* WLBlurButton.m in Sources */,
+				007B950D2CD27B8300739B8D /* JPFMDBViewController.m in Sources */,
+				007B950E2CD27B8300739B8D /* JPTXLiveViewController.m in Sources */,
+				007B950F2CD27B8300739B8D /* JPMasonryTestViewController.m in Sources */,
+				007B95102CD27B8300739B8D /* JPCaptureVideoPreviewView.m in Sources */,
+				007B95112CD27B8300739B8D /* JPShapeTestViewController.m in Sources */,
+				007B95122CD27B8300739B8D /* WLRecordConfirmViewController.m in Sources */,
+				007B95132CD27B8300739B8D /* JPImageViewTestViewController.m in Sources */,
+				007B95142CD27B8300739B8D /* JPCaptureViewController.m in Sources */,
+				007B95152CD27B8300739B8D /* AVPlayer+SeekSmoothly.m in Sources */,
+				007B95162CD27B8300739B8D /* WLVideoInterceptionTool.m in Sources */,
+				007B95172CD27B8300739B8D /* WLVideoInterceptionViewController.m in Sources */,
+				007B95182CD27B8300739B8D /* GPUImageViewController.m in Sources */,
+				007B95192CD27B8300739B8D /* JPGPUImageSingleFilterViewController.m in Sources */,
+				007B951A2CD27B8300739B8D /* JPGPUImageCameraViewController.m in Sources */,
+				007B951B2CD27B8300739B8D /* WLVideoInterceptionThumbnail.m in Sources */,
+				007B951C2CD27B8300739B8D /* JPNSCacheViewController.m in Sources */,
+				007B951D2CD27B8300739B8D /* JPBlockTestViewController.m in Sources */,
+				007B951E2CD27B8300739B8D /* JPResizableImageViewController.m in Sources */,
+				007B951F2CD27B8300739B8D /* JPGradientTestViewController.m in Sources */,
+				007B95202CD27B8300739B8D /* JPSwizzleTestView.m in Sources */,
 				007B93C42CD2701E00739B8D /* JPPhotoViewController.m in Sources */,
 				007B93C52CD2701E00739B8D /* WaterfallLayout.swift in Sources */,
 				007B93C62CD2701E00739B8D /* JPPhotoSelectedView.m in Sources */,
