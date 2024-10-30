@@ -15,6 +15,14 @@
     // Override point for customization after application launch.
     [JPProgressHUD setMaxSupportedWindowLevel:UIWindowLevelAlert];
     [JPProgressHUD setMinimumDismissTimeInterval:1.3];
+    
+    if (@available(iOS 15.0, *)) {
+        UINavigationBarAppearance *appearance = [[UINavigationBarAppearance alloc] init];
+        UINavigationBar *navigationBar = [UINavigationBar appearance];
+        navigationBar.scrollEdgeAppearance = appearance;
+        navigationBar.standardAppearance = appearance;
+    }
+    
     return YES;
 }
 
@@ -43,6 +51,10 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+    return JPScreenRotationTool.sharedInstance.orientationMask;
 }
 
 @end

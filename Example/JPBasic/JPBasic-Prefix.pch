@@ -31,5 +31,8 @@
 #import "NSObject+JPExtension.h"
 #import "NSString+JPExtension.h"
 #import "JPProxy.h"
+#import "JPScreenRotationTool.h"
+
+#define JPMoviePath JPDocumentFilePath(@"JPMovie.mp4")
 
 #endif
