@@ -27,6 +27,7 @@
 #import "JPFileTool.h"
 #import "UIViewController+JPExtension.h"
 #import "UIImage+JPExtension.h"
+#import "UIImageView+JPExtension.h"
 #import "NSObject+JPExtension.h"
 #import "NSString+JPExtension.h"
 #import "JPProxy.h"
