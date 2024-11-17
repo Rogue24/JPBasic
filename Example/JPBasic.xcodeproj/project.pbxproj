@@ -172,6 +172,9 @@
 		00E4BD7E2C7DA1E900D1C9EB /* UIImageView+JPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E4BD612C7DA1E900D1C9EB /* UIImageView+JPExtension.m */; };
 		00E4BD7F2C7DA1E900D1C9EB /* YYAnimatedImageView+JPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E4BD632C7DA1E900D1C9EB /* YYAnimatedImageView+JPExtension.m */; };
 		00E4BD802C7DA1E900D1C9EB /* YYWebImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E4BD652C7DA1E900D1C9EB /* YYWebImageHelper.m */; };
+		00E5039A2CE9C91D00E970F1 /* JPOperationQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E503992CE9C91D00E970F1 /* JPOperationQueueViewController.m */; };
+		00E5039D2CE9C98200E970F1 /* JPManualOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E5039C2CE9C98200E970F1 /* JPManualOperation.m */; };
+		00E503A02CE9D47D00E970F1 /* JPNormalOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E5039F2CE9D47D00E970F1 /* JPNormalOperation.m */; };
 		12C8D0B3EC209E9BE3B0CC43 /* Pods_JPBasic_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7BC77C7C30412D2EB60268 /* Pods_JPBasic_Example.framework */; };
 		1A902DC02463EBB10089D740 /* Log+TFUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A902DBF2463EBB10089D740 /* Log+TFUnicodeReadable.m */; };
 		1A902DC32463ED590089D740 /* JPStartPauseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A902DC22463ED590089D740 /* JPStartPauseButton.m */; };
@@ -524,6 +527,12 @@
 		00E4BD632C7DA1E900D1C9EB /* YYAnimatedImageView+JPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YYAnimatedImageView+JPExtension.m"; sourceTree = "<group>"; };
 		00E4BD642C7DA1E900D1C9EB /* YYWebImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWebImageHelper.h; sourceTree = "<group>"; };
 		00E4BD652C7DA1E900D1C9EB /* YYWebImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWebImageHelper.m; sourceTree = "<group>"; };
+		00E503982CE9C91D00E970F1 /* JPOperationQueueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPOperationQueueViewController.h; sourceTree = "<group>"; };
+		00E503992CE9C91D00E970F1 /* JPOperationQueueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPOperationQueueViewController.m; sourceTree = "<group>"; };
+		00E5039B2CE9C98200E970F1 /* JPManualOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPManualOperation.h; sourceTree = "<group>"; };
+		00E5039C2CE9C98200E970F1 /* JPManualOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPManualOperation.m; sourceTree = "<group>"; };
+		00E5039E2CE9D47D00E970F1 /* JPNormalOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPNormalOperation.h; sourceTree = "<group>"; };
+		00E5039F2CE9D47D00E970F1 /* JPNormalOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPNormalOperation.m; sourceTree = "<group>"; };
 		00F307162C96D4F700EDE003 /* JPBasic_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JPBasic_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		1A902DBF2463EBB10089D740 /* Log+TFUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Log+TFUnicodeReadable.m"; sourceTree = "<group>"; };
 		1A902DC12463ED590089D740 /* JPStartPauseButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPStartPauseButton.h; sourceTree = "<group>"; };
@@ -911,6 +920,7 @@
 				007B94942CD27B8300739B8D /* Example_Video */,
 				007B946F2CD27B8300739B8D /* Example_Block */,
 				007B94A02CD27B8300739B8D /* Example_GCD */,
+				00E503972CE9C8EF00E970F1 /* Example_OperationQueue */,
 				007B94B62CD27B8300739B8D /* Example_GPUImage */,
 				007B94CD2CD27B8300739B8D /* Example_Masonry */,
 				007B94972CD27B8300739B8D /* Example_FMDB */,
@@ -1330,6 +1340,19 @@
 			path = JPWebImage;
 			sourceTree = "<group>";
 		};
+		00E503972CE9C8EF00E970F1 /* Example_OperationQueue */ = {
+			isa = PBXGroup;
+			children = (
+				00E503982CE9C91D00E970F1 /* JPOperationQueueViewController.h */,
+				00E503992CE9C91D00E970F1 /* JPOperationQueueViewController.m */,
+				00E5039B2CE9C98200E970F1 /* JPManualOperation.h */,
+				00E5039C2CE9C98200E970F1 /* JPManualOperation.m */,
+				00E5039E2CE9D47D00E970F1 /* JPNormalOperation.h */,
+				00E5039F2CE9D47D00E970F1 /* JPNormalOperation.m */,
+			);
+			path = Example_OperationQueue;
+			sourceTree = "<group>";
+		};
 		1AA9560224DA6DA000411773 /* WTVCrash */ = {
 			isa = PBXGroup;
 			children = (
@@ -1709,6 +1732,7 @@
 				007B94572CD2782E00739B8D /* WTVRedPackageModel.m in Sources */,
 				007B94582CD2782E00739B8D /* WTVRedPackageTrafficPrizesView.m in Sources */,
 				007B94592CD2782E00739B8D /* WTVRedPacketPopView.m in Sources */,
+				00E503A02CE9D47D00E970F1 /* JPNormalOperation.m in Sources */,
 				00E4BD792C7DA1E900D1C9EB /* YYWebImageOperation.m in Sources */,
 				00E4BD7B2C7DA1E900D1C9EB /* JPRoundImageManager.m in Sources */,
 				1AA9563824DA6DA100411773 /* NSObject+WTVCrashProtector.m in Sources */,
@@ -1716,6 +1740,7 @@
 				00E4BD692C7DA1E900D1C9EB /* YYKVStorage.m in Sources */,
 				007B93C12CD2701E00739B8D /* JPPhotoCollectionViewFlowLayout.m in Sources */,
 				007B93C22CD2701E00739B8D /* NoDataView.m in Sources */,
+				00E5039D2CE9C98200E970F1 /* JPManualOperation.m in Sources */,
 				007B93C32CD2701E00739B8D /* JPPhotoCell.m in Sources */,
 				007B94E92CD27B8300739B8D /* JPBlock.m in Sources */,
 				007B94EA2CD27B8300739B8D /* JPGCDTargetQueueViewController.m in Sources */,
@@ -1786,6 +1811,7 @@
 				007B93E62CD2717100739B8D /* NSObject+SXRuntime.m in Sources */,
 				007B93E72CD2717100739B8D /* NSIndexSet+Extension.m in Sources */,
 				007B93E82CD2717100739B8D /* NSIndexSet+Convenience.m in Sources */,
+				00E5039A2CE9C91D00E970F1 /* JPOperationQueueViewController.m in Sources */,
 				007B93E92CD2717100739B8D /* UICollectionView+Convenience.m in Sources */,
 				007B93CB2CD2701E00739B8D /* JPPhotoTool.m in Sources */,
 				007B93CD2CD2701E00739B8D /* JPAlbumViewModel.m in Sources */,

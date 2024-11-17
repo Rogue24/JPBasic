@@ -59,6 +59,7 @@
                           @"JPVideoTestViewController"],
 #pragma mark 代码
                         @[@"JPPhotoViewController",
+                          @"JPOperationQueueViewController",
                           @"JPTableTestUpdateViewController",
                           @"SDWebImageTestViewController",
                           @"JPNSCacheViewController",
